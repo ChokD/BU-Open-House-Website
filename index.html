@@ -16,26 +16,16 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="border-bottom lh-1 py-3 px-8 mx-3">
       <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-4 pt-1">
-          <a href="https://www.facebook.com/buconnectonline"
-            ><i class="fa-brands fa-facebook"></i>
-            <span style="display: none">Facebook</span></a
-          >
-          <a href="https://www.facebook.com/buconnectonline"
-            ><i class="fa-brands fa-instagram"></i>
-            <span style="display: none">instagram</span></a
-          >
-          <a href="https://www.facebook.com/buconnectonline"
-            ><i class="fa-brands fa-tiktok"></i>
-            <span style="display: none">tiktok</span></a
-          >
-        </div>
-        <div class="col-4 text-center">
+        <div class="col-4 text-left">
           <a href="#"
             ><img
               src="img\BUlogo.png"
@@ -46,25 +36,6 @@
           /></a>
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center">
-          <a class="link-secondary" href="#" aria-label="Search">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="mx-3"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <title>Search</title>
-              <circle cx="10.5" cy="10.5" r="7.5"></circle>
-              <path d="M21 21l-5.2-5.2"></path>
-            </svg>
-          </a>
           <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
         </div>
       </div>
@@ -77,7 +48,7 @@
           <a class="nav-item nav-link link-body-emphasis active" href="#"
             >Home</a
           >
-          <a class="nav-item nav-link link-body-emphasis" href="#">About </a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">About</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Schedule</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Speaker</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Workshops</a>
@@ -91,33 +62,49 @@
         </nav>
       </div>
     </div>
-    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-      <div class="col-lg-6 px-0">
-        <h1 class="display-4 fst-italic">
-          Title of a longer featured blog post
-        </h1>
-        <h1>
-          asdasdsad
-        </h1>
-        <p class="lead my-3">
-          Multiple lines of text that form the lede, informing new readers
-          quickly and efficiently about what’s most interesting in this post’s
-          contents.
-        </p>
-        <p class="lead mb-0">
-          <a href="#" class="text-body-emphasis fw-bold">Continue reading...</a>
-        </p>
+    <div
+      class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"
+    >
+      <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <h1 class="display-3 fw-bold">Designed for engineers</h1>
+        <h3 class="fw-normal text-muted mb-3">
+          Build anything you want with Aperture
+        </h3>
+        <div class="d-flex gap-3 justify-content-center lead fw-normal"></div>
       </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div
+        class="product-device product-device-2 shadow-sm d-none d-md-block"
+      ></div>
     </div>
-    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-      <p>
-        Blog template built for
-        <a href="https://getbootstrap.com/">Bootstrap</a> by
-        <a href="https://twitter.com/mdo">@mdo</a>.
-      </p>
-      <p class="mb-0">
-        <a href="#">Back to top</a>
-      </p>
+    <footer
+      class="under"
+      style="padding: 30px; padding-left: 250px; padding-right: 250px"
+    >
+      <div class="row justify-content-between align-items-center">
+        <div class="col-4 text-left py-3" style="font-size: 18px; color: white;">
+          <p>
+            9, 1 Phahonyothin Rd, Khlong Nueng,<br />
+            Khlong Luang, Pathum Thani 12120
+          </p>
+        </div>
+        <div
+          class="col-4 d-flex flex-column justify-content-end align-items-end"
+          style="font-size: 24px"
+        >
+          <a
+            href="https://www.facebook.com/buconnectonline"
+            class="mb-2 link-style"
+          >
+            <i class="fa-brands fa-facebook"></i>
+            <span style="display: none">Facebook</span>Facebook
+          </a>
+          <a href="https://www.facebook.com/buconnectonline" class="link-style">
+            <i class="fa-brands fa-instagram"></i>
+            <span style="display: none">Instagram</span>Instagram
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
