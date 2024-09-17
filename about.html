@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - มหาวิทยาลัยกรุงเทพฯ</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: gray;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
+        }
+        header img {
+            height: 60px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h2 {
+            color: #0056a0;
+            font-size: 2.5em;
+            border-bottom: 3px solid #0056a0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        h3 {
+            color: #333;
+            font-size: 1.8em;
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        p {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+            display: block;
+            animation: fadeIn 1s ease-in-out;
+        }
+        hr {
+            border: 0;
+            height: 2px;
+            background: #0056a0;
+            margin: 20px 0;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/BUlogo.png">
+    </header>
+    <div class="container">
+        <section>
+            <h2>เกี่ยวกับเรา</h2>
+            <img src="img/BUfront.png">
+            <h3>ประวัติความเป็นมา</h3>
+            <p>มหาวิทยาลัยกรุงเทพฯ ก่อตั้งขึ้นเมื่อปี พ.ศ. 2505 ด้วยวิสัยทัศน์ที่จะเป็นสถาบันการศึกษาชั้นนำที่มุ่งเน้นการสร้างสรรค์ความรู้และนวัตกรรมที่มีคุณค่าเพื่อสังคม โดยเราได้รับการสนับสนุนจากคณะผู้ก่อตั้งที่มีความมุ่งมั่นในการพัฒนาการศึกษาและการวิจัยในประเทศไทย</p>
+            <hr>
+            <img src="img/BUevent.jpg">
+            <h3>ภารกิจและวิสัยทัศน์</h3>
+            <p><strong>ภารกิจ:</strong> มหาวิทยาลัยกรุงเทพฯ มุ่งเน้นการสร้างบัณฑิตที่มีคุณภาพสูง ด้วยการศึกษาที่ทันสมัย การวิจัยที่เป็นเลิศ และการบริการที่มีประสิทธิภาพแก่ชุมชนและสังคม เพื่อสร้างความรู้ใหม่และพัฒนาทักษะที่จำเป็นสำหรับการเป็นผู้นำในอนาคต</p>
+            <p><strong>วิสัยทัศน์:</strong> เรามุ่งหวังที่จะเป็นมหาวิทยาลัยชั้นนำระดับโลกที่มีความเป็นเลิศในด้านการศึกษา การวิจัย และการบริการสังคม ด้วยการพัฒนาอย่างยั่งยืนและเป็นธรรม</p>
+            
+            <h3>ค่านิยมหลัก</h3>
+            <ul>
+                <li><strong>C = Creativity:</strong> ความคิดสร้างสรรค์</li>
+                <li><strong>R = Responsibility:</strong> ความรับผิดชอบต่อสังคม</li>
+                <li><strong>E = Excellence:</strong> คุณภาพและความเป็นมืออาชีพ</li>
+                <li><strong>A = Agility:</strong> ความพร้อมในการปรับตัวตามสถานการณ์</li>
+                <li><strong>T = Trust:</strong> การยึดมั่นในความซื่อตรง</li>
+                <li><strong>I = Internationalization:</strong> ความเป็นสากล</li>
+                <li><strong>V = Vision:</strong> การมองการณ์ไกล</li>
+                <li><strong>E = Entrepreneurial Spirit:</strong> การมีจิตวิญญาณผู้ประกอบการ</li>
+            </ul>
+            
+            <img src="img/BUevent2.jpg">
+            <h3>สิ่งที่เรานำเสนอ</h3>
+            <p><strong>หลักสูตรการศึกษา:</strong> เรามีหลักสูตรที่หลากหลายตั้งแต่ระดับปริญญาตรีไปจนถึงระดับปริญญาเอก ครอบคลุมหลายสาขาวิชาเพื่อรองรับความสนใจและความต้องการของนักศึกษา</p>
+            <p><strong>การวิจัยและนวัตกรรม:</strong> เราสนับสนุนการวิจัยและการพัฒนานวัตกรรมที่มีความสำคัญต่อการพัฒนาประเทศและสังคม</p>
+            <p><strong>บริการชุมชน:</strong> เรามีโครงการและกิจกรรมที่มุ่งหวังให้บริการและสนับสนุนชุมชนในด้านต่างๆ</p>
+        </section>
+    </div>
+</body>
+</html>
