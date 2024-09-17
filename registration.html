@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body>
+    <header class="border-bottom lh-1 py-3 px-8 mx-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 text-left">
+          <a href="index.html"
+            ><img
+              src="img\BULogo1.png"
+              style="object-position: center"
+              height="30"
+          /></a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+        </div>
+      </div>
+    </header>
+    <div
+      class="flex justify-between items-center px-8 mx-3 bg-blue-400 w-full h-[80px] rounded-2xl"
+    >
+      <div class="md:flex gap-8 hidden">
+        <nav class="nav nav-underline justify-content-between">
+          <a class="nav-item nav-link link-body-emphasis" href="index.html"
+            >Home</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="about.html"
+            >About</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="schedule.html"
+            >Schedule</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="#">Speaker</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Workshops</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Gallery</a>
+          <a class="nav-item nav-link link-body-emphasis" href="faq.html"
+            >FAQ</a
+          >
+          <a class="nav-item nav-link link-body-emphasis active" href="registration.html"
+            >Registration</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="contactUs.html"
+            >Contact</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="#">Sponsors</a>
+        </nav>
+      </div>
+    </div>
+    <section class="container"></section>
+    <header>BU Registration Form</header>
+    <div class="boxRegistration">
+        <form action="#" class="form">
+            <div class="input-box">
+                <label>Name</label>
+                <input type="text" placeholder="Enter Name" />
+            </div>
+            <div class="input-box">
+                <label>Surname</label>
+                <input type="text" placeholder="Enter Surname" />
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label>Email Address</label>
+                    <input type="text" placeholder="Enter email address" />
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label>Phone</label>
+                    <input type="text" placeholder="Enter phone number" />
+            </div>
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <select id="gender" name="gender">
+                    <option value="">Select...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br>
+            </div>
+
+            <div class="input-box address">
+                <label>Address</label>
+                <input list="Class" placeholder="มาจากชั้นไหน" กรุณาใส่ด้วย/>
+                <input type="text" placeholder="มาจากโรงเรียนอะไร" กรุณาใส่ด้วย/>
+                    <datalist id="Class">
+                         <option value="ม.1">
+                         <option value="ม.2">
+                         <option value="ม.3">
+                         <option value="ม.4">
+                         <option value="ม.5">
+                        <option value="ม.6">
+                    </datalist>
+                    <input list="provinces" placeholder="Select a province">
+                    <datalist id="provinces">
+                        <option value="กรุงเทพเเละปริมณฑล">
+                        <option value="เชียงใหม่">
+                        <option value="นครราชสีมา">
+                        <option value="กาญจนบุรี">
+                        <option value="ตาก">
+                        <option value="อุบลราชธานี">
+                        <option value="ชัยภูมิ">
+                        <option value="แม่ฮ่องสอน">
+                        <option value="เพชรบูรณ์">
+                        <option value="ลำปาง">
+                        <option value="เพชรบูรณ์">
+                        <option value="อุดรธานี">
+                        <option value="เชียงราย">
+                        <option value="น่าน">
+                        <option value="เลย">
+                        <option value="เพชรบูรณ์">
+                        <option value="ขอนแก่น">
+                        <option value="พิษณุโลก">
+                        <option value="บุรีรัมย์">
+                        <option value="นครศรีธรรมราช">
+                        <option value="สกลนคร">
+                        <option value="นครสวรรค์">
+                        <option value="ศรีสะเกษ">
+                        <option value="กำแพงเพชร">
+                        <option value="ร้อยเอ็ด">
+                        <option value="สุรินทร์">
+                        <option value="อุตรดิตถ์">
+                        <option value="สงขลา">
+                        <option value="สระแก้ว">
+                        <option value="กาฬสินธุ์">
+                        <option value="อุทัยธานี">
+                        <option value="สุโขทัย">
+                        <option value="แพร่">
+                        <option value="ประจวบคีรีขันธ์">
+                        <option value="จันทบุรี">
+                        <option value="พะเยา">
+                        <option value="เพชรบุรี">
+                        <option value="ลพบุรี">
+                        <option value="ชุมพร">
+                        <option value="นครพนม">
+                        <option value="สุพรรณบุรี">
+                        <option value="ฉะเชิงเทรา">
+                        <option value="ราชบุรี">
+                        <option value="ตรัง">
+                        <option value="ปราจีนบุรี">
+                        <option value="กระบี่">
+                        <option value="พิจิตร">
+                        <option value="ยะลา">
+                        <option value="ลำพูน">
+                        <option value="นราธิวาส">
+                        <option value="ชลบุรี">
+                        <option value="มุกดาหาร">
+                        <option value="บึงกาฬ">
+                        <option value="พังงา">
+                        <option value="ยโสธร">
+                        <option value="หนองบัวลำภู">
+                        <option value="สระบุรี">
+                        <option value="ระยอง">
+                        <option value="พัทลุง">
+                        <option value="ระนอง">
+                        <option value="อำนาจเจริญ">
+                        <option value="หนองคาย">
+                        <option value="ตลาด">
+                        <option value="พระนครศรีอยุธยา">
+                        <option value="พระนครศรีอยุธยา">
+                        <option value="สตูล">
+                        <option value="ชัยนาท">
+                        <option value="นครปฐม">
+                        <option value="นครนายก">
+                        <option value="ปัตตานี">
+                        <option value="นครปฐม">
+                        <option value="สมุทรปราการ">
+                        <option value="อ่างทอง">
+                        <option value="สมุทรสาคร">
+                        <option value="สิงห์บุรี">
+                        <option value="นนทบุรี">
+                        <option value="ภูเก็ต">
+                        <option value="สมุทรสงคราม">
+                    </datalist>
+                </div>
+        </form>
+        <button>Submit</button>
+    </div>
+    </section>
+    <footer
+      class="under"
+      style="
+        padding: 30px;
+        padding-left: 250px;
+        padding-right: 250px;
+        color: white;
+        background-color: #343a40;
+      "
+    >
+      <div class="row justify-content-between align-items-center">
+        <div class="col-4 text-left py-3" style="font-size: 18px; color: white">
+          <p>
+            9, 1 Phahonyothin Rd, Khlong Nueng,<br />
+            Khlong Luang, Pathum Thani 12120
+          </p>
+        </div>
+        <div
+          class="col-4 d-flex flex-column justify-content-end align-items-end"
+          style="font-size: 24px"
+        >
+          <a
+            href="https://www.facebook.com/buconnectonline"
+            class="mb-2 link-style"
+            style="color: white"
+          >
+            <i class="fa-brands fa-facebook"></i>
+            <span style="display: none">Facebook</span>Facebook
+          </a>
+          <a
+            href="https://www.instagram.com/buconnectonline/?hl=th"
+            class="link-style"
+            style="color: white"
+          >
+            <i class="fa-brands fa-instagram"></i>
+            <span style="display: none">Instagram</span>Instagram
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
