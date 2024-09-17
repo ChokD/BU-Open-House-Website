@@ -16,5 +16,61 @@
 }
 
 .under {
-    background-color: gray;
+  background-color: #343a40;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+  background: #343a40;
+  color: #fff;
+  padding: 20px ;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-out;
+}
+
+header img {
+  height: 60px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
 }

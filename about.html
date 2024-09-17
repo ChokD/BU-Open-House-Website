@@ -1,140 +1,240 @@
 <!DOCTYPE html>
 <html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - มหาวิทยาลัยกรุงเทพฯ</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+      h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        animation: fadeIn 1s ease-in-out;
+      }
+      h2 {
+        color: #0056a0;
+        font-size: 2.5em;
+        border-bottom: 3px solid #0056a0;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        animation: fadeInUp 1s ease-in-out;
+      }
+      h3 {
+        color: #333;
+        font-size: 1.8em;
+        margin-top: 20px;
+        animation: fadeInUp 1s ease-in-out;
+      }
+      p {
+        margin: 15px 0;
+        line-height: 1.8;
+      }
+      ul {
+        list-style-type: disc;
+        margin: 15px 0;
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 10px;
+        animation: fadeInUp 1s ease-in-out;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 15px 0;
+        display: block;
+        animation: fadeIn 1s ease-in-out;
+      }
+      hr {
+        border: 0;
+        height: 2px;
+        background: #0056a0;
+        margin: 20px 0;
+      }
+      @keyframes slideIn {
+        from {
+          transform: translateY(-100%);
+          opacity: 0;
         }
-        header {
-            background: gray;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            animation: slideIn 1s ease-out;
+        to {
+          transform: translateY(0);
+          opacity: 1;
         }
-        header img {
-            height: 60px;
-            vertical-align: middle;
-            display: inline-block;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
         }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
+        to {
+          opacity: 1;
         }
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @media (max-width: 768px) {
         .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-            border-radius: 8px;
-            animation: fadeIn 1s ease-in-out;
+          width: 95%;
         }
-        h2 {
-            color: #0056a0;
-            font-size: 2.5em;
-            border-bottom: 3px solid #0056a0;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            animation: fadeInUp 1s ease-in-out;
-        }
-        h3 {
-            color: #333;
-            font-size: 1.8em;
-            margin-top: 20px;
-            animation: fadeInUp 1s ease-in-out;
-        }
-        p {
-            margin: 15px 0;
-            line-height: 1.8;
-        }
-        ul {
-            list-style-type: disc;
-            margin: 15px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-            animation: fadeInUp 1s ease-in-out;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 15px 0;
-            display: block;
-            animation: fadeIn 1s ease-in-out;
-        }
-        hr {
-            border: 0;
-            height: 2px;
-            background: #0056a0;
-            margin: 20px 0;
-        }
-        @keyframes slideIn {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-    <header>
-        <img src="img/BUlogo.png">
-    </header>
+  </head>
+  <body>
+    <header class="border-bottom lh-1 py-3 px-8 mx-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 text-left">
+            <a href="#"
+              ><img
+                src="img\BUlogo.png"
+                style="object-position: center"
+                height="30"
+            /></a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+          </div>
+        </div>
+      </header>
+      <div
+        class="flex justify-between items-center px-8 mx-3 bg-blue-400 w-full h-[80px] rounded-2xl"
+      >
+      <div class="md:flex gap-8 hidden">
+        <nav class="nav nav-underline justify-content-between">
+          <a
+            class="nav-item nav-link link-body-emphasis active"
+            href="index.html"
+            >Home</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="about.html"
+            >About</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="schedule.html">Schedule</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Speaker</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Workshops</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Gallery</a>
+          <a class="nav-item nav-link link-body-emphasis" href="faq.html"
+            >FAQ</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="#"
+            >Registration</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="contactUs.html"
+            >Contact</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="#">Sponsors</a>
+        </nav>
+      </div>
+      </div>
     <div class="container">
-        <section>
-            <h2>เกี่ยวกับ Open House ของเรา</h2>
-            <img src="img/BUfront.png">
-            <h3>ประวัติความเป็นมา</h3>
-            <p>มหาวิทยาลัยกรุงเทพฯ ได้จัดกิจกรรม Open House โดยมีวัตถุประสงค์เพื่อเปิดโอกาสให้นักเรียนและผู้ปกครองได้เข้ามารู้จักกับมหาวิทยาลัยและค้นพบสิ่งที่เรามีให้บริการ เช่น หลักสูตรการศึกษา สิ่งอำนวยความสะดวก และกิจกรรมต่างๆ ภายในมหาวิทยาลัย การจัดกิจกรรมนี้มีเป้าหมายในการส่งเสริมความรู้และการเข้าถึงข้อมูลสำหรับนักเรียนที่สนใจและกำลังจะเข้าศึกษาต่อในระดับอุดมศึกษา</p>
-            <hr>
-            <img src="img/BUevent.jpg">
-            <h3>กิจกรรมและกิจกรรมหลัก</h3>
-            <p><strong>กิจกรรมการแสดงหลักสูตร:</strong> เรามีการจัดแสดงหลักสูตรที่หลากหลายเพื่อให้นักเรียนได้รู้จักกับสาขาวิชาต่างๆ ที่มหาวิทยาลัยเสนอ</p>
-            <p><strong>การประชุมกับคณาจารย์:</strong> นักเรียนสามารถพบปะกับคณาจารย์และสอบถามข้อมูลเกี่ยวกับหลักสูตร การเรียนการสอน และกิจกรรมทางวิชาการต่างๆ</p>
-            
-            <h3>กิจกรรม Open House ปีนี้</h3>
-            <p><strong>วันและเวลา:</strong> กิจกรรม Open House จะจัดขึ้นในวันที่ 10-12 พฤศจิกายน พ.ศ. 2567 ตั้งแต่เวลา 09:00 - 17:00 น.</p>
-            <p><strong>สถานที่:</strong> มหาวิทยาลัยกรุงเทพฯ วิทยาเขตหลัก</p>
-            <p><strong>การลงทะเบียน:</strong> สามารถลงทะเบียนล่วงหน้าได้ที่เว็บไซต์ของมหาวิทยาลัย หรือมาที่จุดลงทะเบียน(A3)ในวันงานเพื่อเข้าร่วมกิจกรรม</p>
-        </section>
+      <section>
+        <h2>เกี่ยวกับ Open House ของเรา</h2>
+        <img src="img/BUfront.png" />
+        <h3>ประวัติความเป็นมา</h3>
+        <p>
+          มหาวิทยาลัยกรุงเทพฯ ได้จัดกิจกรรม Open House
+          โดยมีวัตถุประสงค์เพื่อเปิดโอกาสให้นักเรียนและผู้ปกครองได้เข้ามารู้จักกับมหาวิทยาลัยและค้นพบสิ่งที่เรามีให้บริการ
+          เช่น หลักสูตรการศึกษา สิ่งอำนวยความสะดวก และกิจกรรมต่างๆ
+          ภายในมหาวิทยาลัย
+          การจัดกิจกรรมนี้มีเป้าหมายในการส่งเสริมความรู้และการเข้าถึงข้อมูลสำหรับนักเรียนที่สนใจและกำลังจะเข้าศึกษาต่อในระดับอุดมศึกษา
+        </p>
+        <hr />
+        <img src="img/BUevent.jpg" />
+        <h3>กิจกรรมและกิจกรรมหลัก</h3>
+        <p>
+          <strong>กิจกรรมการแสดงหลักสูตร:</strong>
+          เรามีการจัดแสดงหลักสูตรที่หลากหลายเพื่อให้นักเรียนได้รู้จักกับสาขาวิชาต่างๆ
+          ที่มหาวิทยาลัยเสนอ
+        </p>
+        <p>
+          <strong>การประชุมกับคณาจารย์:</strong>
+          นักเรียนสามารถพบปะกับคณาจารย์และสอบถามข้อมูลเกี่ยวกับหลักสูตร
+          การเรียนการสอน และกิจกรรมทางวิชาการต่างๆ
+        </p>
+
+        <h3>กิจกรรม Open House ปีนี้</h3>
+        <p>
+          <strong>วันและเวลา:</strong> กิจกรรม Open House จะจัดขึ้นในวันที่
+          10-12 พฤศจิกายน พ.ศ. 2567 ตั้งแต่เวลา 09:00 - 17:00 น.
+        </p>
+        <p><strong>สถานที่:</strong> มหาวิทยาลัยกรุงเทพฯ วิทยาเขตหลัก</p>
+        <p>
+          <strong>การลงทะเบียน:</strong>
+          สามารถลงทะเบียนล่วงหน้าได้ที่เว็บไซต์ของมหาวิทยาลัย
+          หรือมาที่จุดลงทะเบียน(A3)ในวันงานเพื่อเข้าร่วมกิจกรรม
+        </p>
+      </section>
     </div>
-</body>
+    <footer
+      class="under"
+      style="
+        padding: 30px;
+        padding-left: 250px;
+        padding-right: 250px;
+        color: white;
+        background-color: #343a40;
+      "
+    >
+      <div class="row justify-content-between align-items-center">
+        <div class="col-4 text-left py-3" style="font-size: 18px; color: white">
+          <p>
+            9, 1 Phahonyothin Rd, Khlong Nueng,<br />
+            Khlong Luang, Pathum Thani 12120
+          </p>
+        </div>
+        <div
+          class="col-4 d-flex flex-column justify-content-end align-items-end"
+          style="font-size: 24px"
+        >
+          <a
+            href="https://www.facebook.com/buconnectonline"
+            class="mb-2 link-style"
+            style="color: white"
+          >
+            <i class="fa-brands fa-facebook"></i>
+            <span style="display: none">Facebook</span>Facebook
+          </a>
+          <a
+            href="https://www.facebook.com/buconnectonline"
+            class="link-style"
+            style="color: white"
+          >
+            <i class="fa-brands fa-instagram"></i>
+            <span style="display: none">Instagram</span>Instagram
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
