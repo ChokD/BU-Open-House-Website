@@ -142,6 +142,72 @@ img {
   background-color: #5d2acd;
 }
 
+.ask {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.faq-header {
+  border: 2px solid #640000;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  max-width: 0 auto;
+  margin: 0 auto 20px auto;
+}
+
+.faq-header h1 {
+  margin: 0;
+  color: #BF2EF0;
+}
+
+
+.faq-container {
+  text-align: left;
+}
+
+.faq-box {
+  border: 1px solid #430357;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #FFF7F7;
+  margin: 15px auto;
+  max-width: 1000px;
+}
+
+.faq-box h2 {
+  margin-bottom: 10px;
+  color: #1230AE;
+}
+
+.faq-box p {
+  font-size: 20px;
+  color: #6C48C5;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
 @media screen and (max-width: 1000px) {
   .form .column {
     flex-wrap: wrap;
