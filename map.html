@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<style>
+    section {
+        background: url(https://images.unsplash.com/photo-1460411794035-42aac080490a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+
+    .tumpnail img {
+        margin: 0 0;
+        width: 100%;
+        height: 225px;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        
+    }
+    .tumpnail img:hover {
+        transform: scale(1.05);
+    }
+
+</style>
+
+<body>
+    <header class="border-bottom lh-1 py-3 px-8 mx-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 text-left">
+                <a href="index.html"><img src="img\BULogo1.png" style="object-position: center" height="30" /></a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+            </div>
+        </div>
+    </header>
+    <!-- ส่วนหัว -->
+    <div class="flex justify-between items-center px-8 mx-3 bg-blue-400 w-full h-[80px] rounded-2xl">
+        <div class="md:flex gap-8 hidden">
+            <nav class="nav nav-underline justify-content-between">
+                <a class="nav-item nav-link link-body-emphasis" href="index.html">Home</a>
+                <a class="nav-item nav-link link-body-emphasis" href="about.html">About</a>
+                <a class="nav-item nav-link link-body-emphasis" href="schedule.html">Schedule</a>
+                <a class="nav-item nav-link link-body-emphasis" href="#">Speaker</a>
+                <a class="nav-item nav-link link-body-emphasis" href="#">Workshops</a>
+                <a class="nav-item nav-link link-body-emphasis" href="#">Gallery</a>
+                <a class="nav-item nav-link link-body-emphasis" href="faq.html">FAQ</a>
+                <a class="nav-item nav-link link-body-emphasis" href="registration.html">Registration</a>
+                <a class="nav-item nav-link link-body-emphasis" href="contactUs.html">Contact</a>
+                <a class="nav-item nav-link link-body-emphasis" href="#">Sponsors</a>
+                <a class="nav-item nav-link link-body-emphasis active" href="map.html">Map</a>
+            </nav>
+        </div>
+    </div>
+    <!-- เนื้อหา -->
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-regular">Map</h1>
+                <p class="lead text-muted">ลายแทงอาคารทั้งหมดในมหาวิทยาลัยกรุงเทพ</p>
+            </div>
+        </div>
+    </section>
+    <!-- เนื้อหา 2 -->
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537337653_75GE5QNV0F.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading1">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse1"
+                                            aria-expanded="false" aria-controls="flush-collapse1">
+                                            อาคาร A1
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse1" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone Business</strong><br>อาคาร A1
+                                            เป็นอาคาร 4 ชั้น
+                                            พื้นที่ใช้สอย 3,390 ตารางเมตร ประกอบด้วย ห้องเรียน ห้องปฏิบัติการ
+                                            คอมพิวเตอร์ ห้องประชุม สำนักวิชาการ สำนักพัฒนา คุณภาพการศึกษา
+                                            สถาบันเศรษฐกิจสร้างสรรค์ โครงการตลาดสร้างสรรค์ธุรกิจ ศูนยสหกิจศึกษาและ
+                                            พัฒนาอาชีพ และศูนย์บ่มเพาะนักพัฒนาซอฟต์แวร์ แหล่งแลกเปลี่ยนความคิด
+                                            พัฒนาต่อยอดความรู้เชิง สร้างสรรค์ด้าน IT ของนักศึกษา คณะ วิศวกรรมศาสตร์
+                                            และคณะวิทยาศาสตร์และเทคโนโลยี แถมยังมีศูนย์คอมพิวเตอร์
+                                            ถ้านักศึกษามีปัญหาเกี่ยว กับการใช้อีเมล หรือลืมรหัสผ่านต่างๆ ก็สามารถมา
+                                            ติดต่อได้ที่ชั้น 4 เช่นกัน</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537337751_IEYS9HFYIB.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading2">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse2"
+                                            aria-expanded="false" aria-controls="flush-collapse2">
+                                            อาคาร A2
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse2" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone Business</strong><br>อาคาร A2 เป็นอาคาร
+                                            4
+                                            ชั้น พื้นที่ใช้สอย 2,643 ตารางเมตร
+                                            อาคารนี้จะเป็นแหล่งปั้นว่าที่เจ้าของธุรกิจ BUSEM
+                                            คณะการสร้างเจ้าธุรกิจและการบริหารกิจการ และมี Creative Studio
+                                            ห้องเรียนของเด็กสถาปัตย์ นอกจากนี้ตึกนี้ยังมีห้อง BUCC หรือศูนย์สร้างสรรค์
+                                            ให้เข้ามาทํากิจกรรมด้วย</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537337815_ZNBF7OE3TU.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading3">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse3"
+                                            aria-expanded="false" aria-controls="flush-collapse3">
+                                            อาคาร A3
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse3" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone Business</strong><br>อาคาร A3
+                                            เป็นอาคาร 6 ชั้น พื้นที่ ใช้สอย 20,390 ตารางเมตร ประกอบด้วย ห้องเรียน
+                                            ห้องสัมมนา หอ ประชุม Diamond Hall สํานักทะเบียนนักศึกษา โรง อาหาร ร้านกาแฟ
+                                            ที่จอดรถ พื้นที่ส่วนงานระบบต่างๆ Common Lounge และ IMAGINE Lounge
+                                            ซึ่งเป็นห้อง พักผ่อนขนาดใหญ่สำหรับนักศึกษา ถูกออกแบบให้เป็น
+                                            สวนสนุกแห่งจินตนาการ เพียบพร้อมด้วยสิ่งอำนวย
+                                            ความสะดวกเชิงสร้างสรรค์จำนวนมากที่สร้างแรง บันดาลใจได้ไม่รู้จบ
+                                            มีพื้นที่สำหรับนั่งพักผ่อน ห้องสมุด การ์ตูน ร้านขนมและเครื่องดื่ม มุมประชุม
+                                            ทางขึ้นชั้น 2 มีหมีแพนด้าตัวใหญ่ที่ถือเป็นแมสคอตของห้องนี้ โดยที่ชั้น 2
+                                            จะเป็นที่เล่นเกมส์ เช่น โต๊ะพูลใหนักศึกษา ออกแบบเกมการเล่นรูปแบบต่างๆ
+                                            กระสอบทรายซ้อม มวยชาย-หญิง กล้อง Periscope สำหรับดูสิ่งแวดล้อม
+                                            ระหว่างชั้นบนและชั้นล่าง ห้องคาราโอเกะ และห้องซ้อม ดนตรี</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537337885_FIOUUMUFOP.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading4">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse4"
+                                            aria-expanded="false" aria-controls="flush-collapse4">
+                                            อาคาร A4
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse4" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone
+                                                Business</strong><br>เหล่าเด็กเศรษฐศาสตร์และการลงทุนต้องจำขึ้นใจ
+                                            เนื่องจากตึกนี้จะต้องมาบ่อยมากเพราะคลาสเรียนส่วน
+                                            ใหญ่จะอยู่ที่ตึกนี้และมีห้องทำงานของอาจารย์คณะ
+                                            เศรษฐศาสตร์และการลงทุนอยู่ด้วย ต้องการปรึกษาก็ เดินมาหาอาจารย์ได้เลย
+                                            อาจารย์ใจดีทุกคน ส่วนด้าน หลังของอาคารนี้จะเป็นฝ่ายกายภาพและสิ่งแวดล้อม ที่
+                                            ให้นักศึกษาได้ติดต่อขอใช้สถานที่ต่างๆ ในมหาวิทยาลัย และที่ขาดไม่ได้ตรงนี้มี
+                                            BU Restaurant ที่เปิดโอกาสให้ นักศึกษาได้ลงมือทำงานด้านภัตตาคารแบบจริงๆ
+                                            พิเศษ สุดๆ ด้วยห้องปฏิบัติงานด้านการครัว พร้อมด้วย
+                                            เครื่องครัวที่ครบครันทันสมัยที่สุด มีพื้นที่และเครื่อง
+                                            ครัวที่สามารถรองรับนักศึกษาได้แบบ 1 ต่อ 1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537338010_DL5PJAZYQM.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading5">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse5"
+                                            aria-expanded="false" aria-controls="flush-collapse5">
+                                            อาคาร A5
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse5" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone Business</strong><br>Tourism Tower
+                                            ถือเป็นสุดยอดอาคารปฏิบัติการที่ ครอบคลุมการเรียนรู้การท่องเที่ยว การโรงแรม
+                                            ภัตตาคาร การประชุม (MICE) การจัดการธุรกิจสาย การบิน
+                                            และภาษาที่ทันสมัยที่สุดในเอเชียแปซิฟิก เป็น อาคารสูง 14 ชั้น
+                                            เพื่อให้นักศึกษาได้ฝึกปฏิบัติงานจริง ครอบคลุมทุกสาขาวิชาการบริการ
+                                            ทั้งการจัดการ โรงแรม ภัตตาคาร การจัดการท่องเที่ยว และการ
+                                            จัดการธุรกิจสายการบิน ด้วยอุปกรณ์ล้ำสมัย มาตรฐานระดับโลก
+                                            ทุกพื้นที่ถูกออกแบบให้ตอบโจทย์ การทํางานระดับอินเตอร์
+                                            เพื่อช่วยให้นักศึกษามีความ พร้อมออกไปทํางานอย่างมืออาชีพได้ทันที เพราะ
+                                            มกท.มีหน้าที่เจียระไนเพชร บ่มเพาะความรู้และความคิด ศูนย์ปฏิบัติโรงแรมครบวงจร
+                                            ให้เรียนรู้ ทํางานจริง และ มีเทรนด์ใหม่ๆ มีห้องพักสแตนดาร์ด จนถึงห้องสูท
+                                            ล็อบบี้ สปา บาร์ ห้องประชุม ส่วนห้องปฏิบัติการการ บิน จําลองแบบเครื่องบิน
+                                            Boeing 787 Dreamliner รุ่น ใหม่ล่าสุด Top of the Line
+                                            ที่รองรับเทคโนโลยีการบิน ในอีก 10 ปีข้างหน้า
+                                            นักศึกษาได้เรียนรู้ตั้งแต่ปฏิบัติงาน ในสนามบินไปจนถึงการบริการบนเครื่องบิน
+                                            ฝึก นักศึกษาพร้อมทำงานในสายการบินทั่วโลก ทั้งพนักงานต้อนรับบนเครื่องบิน
+                                            พนักงานปฏิบัติการภาค พื้นดิน แล้วยังมีห้องปฏิบัติงานครัวทันสมัยขนาดใหญ่
+                                            เทียบเท่าครัวห้องอาหารระดับ 6 ดาว มีร้านอาหาร นานาชาติ BU Restaurant
+                                            รวมถึงห้องปฏิบัติการบริษัท ทัวร์จําลอง ให้ฝึกจัดทัวร์ จองโรงแรม
+                                            จองตั๋วเครื่อง บิน งานทัวร์ต่างๆ ชิมลางวงการท่องเที่ยว ด้านการ โรงแรม
+                                            มีความร่วมมือกับสถาบันการทําอาหารระดับ โลก เลอ กอร์ดองเบลอ
+                                            มาถ่ายทอดวิทยาการให้ นักศึกษา ซึ่งซีอีโอกอร์ดองเบลอมาเยี่ยมห้องปฏิบัติ
+                                            งานครัวที่อาคาร Tourism Tower เมื่อสัปดาห์ที่ผ่านมา ชื่นชมห้องปฏิบัติการ
+                                            อุปกรณ์เรียนรู้และเทคโนโลยีของ ที่นี่อยู่ในระดับเวิลด์คลาส ที่สำคัญ
+                                            มกท.ลงทุนสร้างสิ่ง อำนวยความสะดวก พัฒนาหลักสูตร และความร่วมมือ
+                                            กับต่างประเทศเพื่อทำให้หลักสูตรมีครีเอทีฟ สร้าง
+                                            บัณฑิตที่ครีเอทีฟแตกต่างจากที่อื่น ทํางานได้และมี คุณภาพระดับโลก</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537338090_H7IB2WQSH8.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading6">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse6"
+                                            aria-expanded="false" aria-controls="flush-collapse6">
+                                            อาคาร SAC
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse6" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone Business</strong><br>Student Activity
+                                            Center หรือที่เด็ก BU เรียกกัน ติดปากว่าตึก SAC
+                                            แค่เดินเข้ามาก็รู้สึกถึงความสนุก ด้วยการตกแต่งสีสันสุดจี๊ด
+                                            มีลูกเล่นมีดีไซน์ทันสมัย เสริมพื้นที่ให้เก๋ด้วยตาข่ายนั่งเล่นระหว่างชั้นลอย
+                                            สามารถจองห้อง เพื่อใช้ทำกิจกรรมต่างๆ ได้ เช่น กิจกรรมชมรม
+                                            หรือจะมานั่งทำงานกลุ่ม ติวสอบก็ซิลล์ ไปอีก ใครที่อยากเห็นทีมปอม ปอม เชียร์
+                                            ของ ม.กรุงเทพซ้อมกัน ก็แอบตามมาส่องได้ที่นี่เช่นกัน
+                                            สำหรับนักศึกษาที่นับถือศาสนาอิสลาม ที่ตึกนี้ยังมีห้อง ละหมาดให้ด้วย</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537338129_LXGJ1HHPLY.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading7">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse7"
+                                            aria-expanded="false" aria-controls="flush-collapse7">
+                                            อาคาร A6
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse7" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone
+                                                Business</strong><br>อาคารนี้ก็เป็นอาคารเรียนที่มีนักศึกษาจากหลายคณะ
+                                            มาเรียนในตึกเดียวกัน แถมได้มีโอกาสเจอเพื่อนใหม่ต่าง คณะด้วย
+                                            แถมอีกเหตุผลที่ต้องรู้จักตึกนี้ก็เพราะว่า ห้องพยาบาลของ ม.กรุงเทพ
+                                            นั้นอยู่ที่นี ใครที่รู้สึกว่า ปวดหัว หรือปวดใจ ก็มาหาคุณหมอหรือพี่พยาบาล
+                                            ได้ที่ห้องนี้ และมีสำนักกิจการนักศึกษา มีสัปดาห์
+                                            กิจกรรมเพื่อรับสมัครสมาชิกใหม่ ในการเข้าชมรมต่างๆ มากกว่า 30 ชมรม
+                                            ถ้าอยากจัดกิจกรรมสร้างสรรค์ใน มหาวิทยาลัยก็สามารถมาติดต่อได้ที่นี่เลย<br>
+                                            พิกัด: หากหันหน้าเข้าหามหาวิทยาลัย ตึก A6 จะอยู่ฝั่ง ซ้าย ถัดจากตึก Tourism
+                                            จะเดินไปก็ได้ หรือจะนั่งรถราง เข้ามาที่ตึกนี้ได้</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537338276_VTFPIIMWU8.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading8">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse8"
+                                            aria-expanded="false" aria-controls="flush-collapse8">
+                                            อาคาร A7
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse8" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading8" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone
+                                                Business</strong><br>เป็นอีกหนึ่งอาคารเรียนของเด็ก BU และจะได้เจอว่าที่
+                                            นักกฎหมายรุ่นใหม่ไฟแรง ห้องปฏิบัติการศาลจำลอง ของคณะนิติศาสตร์
+                                            ที่มีคลินิกยุติธรรมให้คำแนะนำและ ปรึกษาด้านกฎหมายโดยไม่คิดค่าใช้จ่ายใดๆ
+                                            บริการดีๆ เพื่อสังคมที่นักศึกษาคณะนิติศาสตร์ได้ปฏิบัติจริง และที่
+                                            นี่ยังมีห้องพักอาจารย์คณะนิติศาสตร์ คณะ บริหารธุรกิจ และคณะบัญชี
+                                            ถ้าใครต้องการติดต่อ อาจารย์เพื่อขอคำปรึกษาก็สามารถมาหาอาจารย์ได้ที่นี่ เลย
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537338341_GOSSQ53MOS.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading9">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse9"
+                                            aria-expanded="false" aria-controls="flush-collapse9">
+                                            อาคาร A8
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse9" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading9" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone
+                                                Business</strong><br>ที่นี่มีของอร่อยเยอะ ทั้งร้านสะดวกซื้อ 7-11
+                                            ฟาสต์ฟู้ด ชื่อดังอย่าง McDonald's จิบชานมไข่มุกเย็นๆ O-Chaya
+                                            แถมยังมีร้านค้าต่างๆ ตลาดนัด และสหกรณ์ ของมหาวิทยาลัยอีกด้วย
+                                            และใครที่สนใจอยากสมัครเข้า เป็นนักศึกษามหาวิทยาลัยกรุงเทพต้องมาที่ตึกนี้
+                                            เพราะ ตึกนี้มีฝ่ายรับสมัครนักศึกษา ที่เปิดทำการทุกวันไม่เว้น วันหยุด
+                                            เพื่อให้สามารถเข้ามาสมัครเรียนและรายงานตัว ทำบัตรนักศึกษากันที่ ชั้น 2
+                                            ส่วนชั้นอื่นๆ ที่สูงขึ้นไปก็จะ เป็นห้องเรียนปกติ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537338461_9UZWMNPHQR.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading10">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse10"
+                                            aria-expanded="false" aria-controls="flush-collapse10">
+                                            อาคาร B1-3
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse10" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading10" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone
+                                                Science&Art</strong><br>ผนังห้องเรียนที่แต่งเติมสีสันด้วยผลงานศิลปะกราฟฟิตี้
+                                            โดยศิลปินชื่อดัง คุณยุรี เกนสาคู ศิษย์เก่าคณะ
+                                            ศิลปกรรมศาสตร์ภายในจะมีห้องฝึกปฏิบัติทางด้านการ ออกแบบต่างๆ
+                                            มีการนำเทคโนโลยีที่ทันสมัยเข้ามาใช้ จัด เต็มทุกสาขา แต่ละห้องนั้นเจ๋งสุดๆ
+                                            แถมอาคารแห่งนี้ยัง มีห้องล้างฟิล์มด้วยซึ่งสมัยนี้หายากมาก สายอาร์ต
+                                            ที่มาเรียนที่นี่รับรองว่าไม่ผิดหวังแน่นอน</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537338512_HVWUXUIKKJ.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading11">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse11"
+                                            aria-expanded="false" aria-controls="flush-collapse11">
+                                            อาคาร B4
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse11" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading11" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone
+                                                Science&Art</strong><br>เป็นอาคารเรียนที่รวมอุปกรณ์การเรียนด้านวิศวะฯ
+                                            เต็มไปด้วยอุปกรณ์ เครื่องมือ เครื่องจักรที่ทันสมัย มากมาย
+                                            และยังมีห้องชมรมหุ่นยนต์ ที่จะเปิดโอกาสให้ นักศึกษา
+                                            เข้ามีส่วนร่วมในการเรียนรู้การสร้าง นวัตกรรมใหม่ๆ
+                                            รวมไปถึงการออกแบบหุ่นยนต์แห่ง โลกอนาคตด้วย</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537338554_RNLJ5CEUCF.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading12">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse12"
+                                            aria-expanded="false" aria-controls="flush-collapse12">
+                                            อาคาร Workshop
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse12" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading12" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone
+                                                Science&Art</strong><br>ภายในเป็นศูนย์รวมงานสร้างสรรค์ที่รอวันจะปล่อย
+                                            ออกมาให้โลกได้รู้จัก เพราะที่นี่เป็นห้องทำงานของเด็ก สถาปัตย์ หรือ Wood
+                                            Workshop เป็นอาคารปฏิบัติ การสำหรับงานไม้ขนาดใหญ่ มีเครื่องจักรในการทํางาน
+                                            ไม้ที่ทันสมัย เพื่อการฝึกปฏิบัติในงานโครงสร้างและงาน ออกแบบเฟอร์นิเจอร์
+                                            นักศึกษาจะได้ฝึกสร้างงานเท่า
+                                            ขนาดจริงกับอาจารย์ผู้เชี่ยวชาญด้านงานไม้โดยเฉพาะ และมีห้อง Digital lab
+                                            อยู่ที่ชั้น 2 ล้ำสมัยด้วยอุปกรณ์ ในการสร้างงานแบบ Digital Fabrication
+                                            มีเครื่อง Laser Cut คุณภาพสูง ที่จะช่วยให้นักศึกษาได้
+                                            สร้างสรรค์งานออกแบบจากแนวคิดไปสู่การสร้างงาน ต้นแบบด้วยเทคโนโลยีที่ทันสมัย
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537338605_AVR2DTYLMU.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading13">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse13"
+                                            aria-expanded="false" aria-controls="flush-collapse13">
+                                            อาคาร C6
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse13" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading13" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone Media</strong><br>หอสมุดสุรัตน์
+                                            โอสถานุเคราะห์ (Surat Osathanugrah Library) - เป็นหอสมุดกลางของมหาวิทยาลัย
+                                            ตั้งอยู่ที่ วิทยาเขตรังสิต เป็นอาคารสูง 5 ชั้น ให้ชื่อเพื่อเป็น
+                                            เกียรติแด่ร้อยตำรวจเอกสุรัตน์ โอสถานุเคราะห์ ผู้ก่อ ตั้งมหาวิทยาลัย</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537338677_CJUICJGQDS.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading14">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse14"
+                                            aria-expanded="false" aria-controls="flush-collapse14">
+                                            อาคาร C1-3
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse14" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading14" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone
+                                                Media</strong><br>นี่คือโฉมหน้าของอาคารเรียนของคณะที่เรียกได้ว่าเป็น
+                                            ที่นิยมเป็นอันดับ 1 ของ ม.กรุงเทพ นั่นก็คือ คณะ นิเทศศาสตร์
+                                            นอกจากมีห้องเรียนเจ๋งๆ มากมายแล้วยัง มีห้องปฏิบัติการอีกมากมายเช่น สตูดิโอ
+                                            ห้องจัด รายการวิทยุ ห้องบันทึกเสียง ห้องตัดต่อ ห้องควบคุม กลาง
+                                            ห้องปฏิบัติการถ่ายภาพ โรงละคร Back Box Theater
+                                            สําหรับให้เรียนรู้การลงมือทํางานจริงแบบ โปรๆ
+                                            เรียกได้ว่าที่นี่เป็นแหล่งรวมอุปกรณ์เจ๋งๆ ทาง นิเทศศาสตร์ไว้แบบครบทุกรูปแบบ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="tumpnail">
+
+                            <img src="https://contents.bu.ac.th/uploads/files/1537338720_ZGK0KBZTCE.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading15">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse15"
+                                            aria-expanded="false" aria-controls="flush-collapse15">
+                                            อาคาร C4
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse15" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading15" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"><strong>Zone
+                                                Media</strong><br>อาคารเรียนที่เราภูมิใจนำเสนอ อาคาร C4 ของคณะ
+                                            ดิจิทัลมีเดียและศิลปะภาพยนตร์ โปรดักชั่นครบวงจรอยู่ ที่นี่
+                                            จัดหนักจัดเต็มกับสตูดิโอ และอุปกรณ์ล้ำสมัยที่ดี
+                                            ที่สุดในเอเชียตะวันออกเฉียงใต้ในนี้ก็จะมีสตูดิโอที่ไว้ สำหรับการถ่ายทำ
+                                            รวมถึงยังมีโรงภาพยนตร์สุด พรีเมียม นอกจากนี้ยังมีห้องปฏิบัติการสุดล้ำ
+                                            เรียกได้ ว่า ฝึกจริง ทําจริง ฉายจริงกันเลย</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ส่วนท้าย -->
+    <footer class="under" style="
+      padding: 30px;
+      padding-left: 250px;
+      padding-right: 250px;
+      color: white;
+      background-color: #343a40;
+    ">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-4 text-left py-3" style="font-size: 18px; color: white">
+                <p>
+                    9, 1 Phahonyothin Rd, Khlong Nueng,<br />
+                    Khlong Luang, Pathum Thani 12120
+                </p>
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-end align-items-end" style="font-size: 24px">
+                <a href="https://www.facebook.com/buconnectonline" class="mb-2 link-style" style="color: white">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span style="display: none">Facebook</span>Facebook
+                </a>
+                <a href="https://www.instagram.com/buconnectonline/?hl=th" class="link-style" style="color: white">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span style="display: none">Instagram</span>Instagram
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
