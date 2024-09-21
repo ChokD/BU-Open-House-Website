@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops and Activities</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<style>
+    .slide {
+        /*background-image: url(https://images.unsplash.com/photo-1620336655052-b57986f5a26a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);*/
+        background: purple;
+    }
+
+
+    .card img {
+        margin: 0 0;
+        width: 100%;
+        height: 225px;
+        object-fit: cover;
+    }
+
+    .row {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    @keyframes appear {
+        from {
+            opacity: 0;
+            scale: 0.5;
+        }
+
+        to {
+            opacity: 1;
+            scale: 1;
+        }
+    }
+
+    .card {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry cover 40%;
+    }
+</style>
+
+<body>
+    <header class="border-bottom lh-1 py-3 px-8 mx-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 text-left">
+                <a href="index.html"><img src="img\BULogo1.png" style="object-position: center" height="30" /></a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+            </div>
+        </div>
+    </header>
+    <!-- ส่วนหัว -->
+    <div class="flex justify-between items-center px-8 mx-3 bg-blue-400 w-full h-[80px] rounded-2xl">
+        <div class="md:flex gap-8 hidden">
+            <nav class="nav nav-underline justify-content-between">
+                <a class="nav-item nav-link link-body-emphasis" href="index.html">Home</a>
+                <a class="nav-item nav-link link-body-emphasis" href="about.html">About</a>
+                <a class="nav-item nav-link link-body-emphasis" href="schedule.html">Schedule</a>
+                <a class="nav-item nav-link link-body-emphasis" href="#">Speaker</a>
+                <a class="nav-item nav-link link-body-emphasis active" href="workshop.html">Workshops</a>
+                <a class="nav-item nav-link link-body-emphasis" href="#">Gallery</a>
+                <a class="nav-item nav-link link-body-emphasis" href="faq.html">FAQ</a>
+                <a class="nav-item nav-link link-body-emphasis" href="registration.html">Registration</a>
+                <a class="nav-item nav-link link-body-emphasis" href="contactUs.html">Contact</a>
+                <a class="nav-item nav-link link-body-emphasis" href="map.html">Map</a>
+                <a class="nav-item nav-link link-body-emphasis" href="#">Sponsors</a>
+            </nav>
+        </div>
+    </div>
+    <!-- เนื้อหา -->
+    <div class="px-4 py-5 my-5 text-center slide">
+        <h1 class="display-5 fw-bold text-body-emphasis">Workshops & Acticites</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead fw-bold mb-4">Activities Club</p>
+            <p class="lead fw-bold mb-4">เพราะชีวิตในมหาวิทยาลัยไม่ได้มีแค่เรื่องการเรียน</p>
+            <p class="lead fw-bold mb-4">สำนักกีฬาและกิจกรรมนักศึกษา (อาคารA6) 02 407 3888 ต่อ 2573, 2574</p>
+        </div>
+    </div>
+    <!-- เก่า -->
+    <div class="view">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/fb066831-7743-4750-81fa-97d5c4d1870f.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">สโมสรนักศึกษา มหาวิทยาลัยกรุงเทพ</h5>
+                        <p class="card-text">รู้จักเพื่อนใหม่ๆพร้อมได้ทำกิจกรรมอยู่เสมอ เด็ก BU สายกิจกรรมไม่ควรพลาด
+                            เรียนรู้การทำงานอย่างเป็นระบบและเป็นทีมเวิร์คอีกทั้งการเป็นผู้นำในกิจกรรมต่างๆของมหาวิทยาลัย
+                            เช่น กิจกรรมคอนเสิร์ต กีฬามหาวิทยาลัย กิจกรรมปฐมนิเทศ และกิจกรรมอื่นๆอีกมากมายของมหาวิทยาลัย
+                            รวมถึงการเป็นกระบอกเสียงสะท้อนข้อเสนอแนะและปัญหาจากนักศึกษา</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/548302bb-bdb5-4935-9149-a81217549aca.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมเชียร์</h5>
+                        <p class="card-text">หากคุณเป็นคนที่มีความกล้าแสดงออกและอยากจะทำให้เกิดความทรงจำดีๆ
+                            โอกาสนั้นมาถึงแล้ว เด็กบียูคนไหนชอบแสดงออก ได้เจอเพื่อนๆอีกหลายๆคณะ
+                            อีกทั้งการได้ทำกิจกรรมในฐานะผู้นำเชียร์ไม่ว่าจะเป็นงานปฐมนิเทศ งานกีฬาและตามคณะ อย่าพลาด
+                            cheerclub bu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/95c43a43-a898-4bdc-aae2-0cb9c49dcd20.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมรักบี้</h5>
+                        <p class="card-text">สายพลังไม่ควรพลาด หากใครชื่นชอบกีฬาที่ได้ใช้ทั้งร่างกาย
+                            การวางแผนและทีมเวิร์ค BU Rugby Club พร้อมผลักดันตั้งแต่พื้นฐาน
+                            โดยอาจารย์ผู้สอนมากความสามารถและรุ่นพี่ที่เคยคว้ารางวัลระดับอุดมศึกษาแห่งประเทศไทย 6
+                            สมัยติดต่อกันไม่ว่าจะเป็นการเล่นยามว่างหรือไปแข่งขัน</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/ee8c7d34-6696-46b6-8ad7-d8bb9a2e7fcc.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Creative Dance</h5>
+                        <p class="card-text">เวทีนี้กำลังจะลุกเป็นไฟ หนุ่มสาวขาแดนซ์ห้ามพลาด มาโชว์สเต็ปเท้าไฟกันที่
+                            Creative Dance สำหรับใครที่ชอบเต้นไม่ว่าจะเป็น HipHop, K-POP, Cover Street Dance
+                            นักศึกษาที่ไม่มีพื้นฐานด้านการเต้น ไม่ต้องกังวลไป เพราะมีสอนตั้งแต่พื้นฐาน
+                            นอกจากได้เต้นแล้วยังได้ออกกำลังกายอีกด้วย</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/ac313f2b-284b-4306-8638-7959b9147815.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BUMP (Bangkok University Movie Productions)</h5>
+                        <p class="card-text">ไม่ได้เรียนภาพยนตร์ก็สามารถทำหนังได้ BUMP (Bangkok University Movie
+                            Productions) เป็นชมรมทำหนังสั้นที่เปิดโอกาสให้นักศึกษาทุกคนได้มีโอกาสทำหนังเป็นของตัวเอง
+                            สำหรับใครที่ไม่มีพื้นฐานทางด้านการทำหนัง ไม่ต้องกังวลไป เพราะทางชมรมมีการจัดกิจกรรม Workshop
+                            ให้นักศึกษา ได้เข้าร่วมและเรียนรู้เทคนิคการทำหนังตั้งแต่เบื้องต้นไปจนถึงการลงมือทำจริง
+                            นอกจากนี้ยังมีการจัดนิทรรศการฉายหนัง แสดงผลงานของน้องๆ อีกด้วย ใครที่ชื่นชอบ
+                            หรือมีความหลงใหลอยากจะสร้างหนังสักเรื่อง ก็สามารถมาทำหนังเรื่องแรกให้เป็นจริงที่ชมรม Bump
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/3fd12132-6d35-44dc-be2b-a2fcbe34d258.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bangkok University Esports Club</h5>
+                        <p class="card-text">สร้างขึ้นมาเพื่อสายเกมเมอร์โดยเฉพาะ
+                            สนับสุนนเกมเมอร์ทุกคนให้เรียนรู้อย่างสนุก และสร้างสรรค์ Bangkok University Esports Club
+                            มีกิจกรรมมากมาย กิจกรรมหลักของชมรมจะเป็นกิจกรรมทางด้าน eSports และเทคโนโลยี VR นอกจากนี้
+                            Bangkok University Esports Club ยังเป็น Outsource eSports Event Organizer
+                            ให้กับบริษัทเกมชื่อดัง และที่สำคัญที่สุด คือมีการจัดการแข่งขัน eSports
+                            ภายในมหาลัยวิทยาลัยอีกด้วย</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/0cb6e5fc-9fc9-42f8-aa15-205c851123a4.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมบาสเกตบอล</h5>
+                        <p class="card-text">We are BU-FBA Basketball. ร่างกายที่แข็งแรง ช่วยให้เรียนรู้ได้ดียิ่งขึ้น
+                            และมีความสุขมากขึ้น หากใครชื่นชอบการออกกำลังกาย
+                            การเล่นกีฬาเป็นทีมอีกทั้งมีอาจารย์คอยให้คำแนะนำและฝึกไปพร้อมๆกัน</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/9e9dcb98-eef7-4da0-b8b8-5bfd41b93ea1.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมเชียร์ลีดดิ้ง</h5>
+                        <p class="card-text">ครที่ชอบการทำงานเป็นทีม และใช้ชีวิตแบบโลดโผน สร้างสรรค์ ไม่เหมือนใคร
+                            ชมรมปอมปอมเชียร์ หรืออีกชื่อหนึ่งว่าเชียร์ลีดดิ้ง เป็นกีฬาที่มีเอกลักษณ์เฉพาะตัว
+                            ซึ่งมีการใช้ท่ายิมนาสติกผสมผสานกับท่าเต้นต่างๆ ไม่ว่าจะม้วนหน้า ม้วนหลัง ตีลังกาต่อตัว
+                            ที่แค่เห็นก็ตื่นเต้นแล้ว กิจกรรมหลักของชมรมคงหนีไม่พ้นการฝึกซ้อม เพราะเป็นถึงแชมป์โลกตั้ง 2
+                            สมัย สำหรับใครที่อยากได้ความท้าทายในชีวิตแนะนำเลย โดยนักศึกษาไม่จำเป็นต้องมีพื้นฐานมาก่อน
+                            เพราะมีสอนตั้งแต่พื้นฐานกันเลย</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/259d7cec-a5d8-4cf9-9bfb-6029dea5c179.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมอนุรักษ์ธรรมชาติและสิ่งแวดล้อม</h5>
+                        <p class="card-text">เดินป่า ทำโป่ง ส่องนก ดูดาว เก็บกระเป๋าไปกับอนุรักษ์ฯ
+                            แล้วสร้างประโยชน์กลับคืนธรรมชาติไปด้วยกัน</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/2f699866-2153-4e47-a1c3-b8ba2eeb5e08.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมวิทยุสมัครเล่น</h5>
+                        <p class="card-text">ใครที่สนใจงานวิทยุสมัครเล่น หรือสนใจเกี่ยวกับคลื่นความถี่วิทยุการใช้งาน
+                            การสอบเป็นนักวิทยุสมัครเล่น ต้องเข้ามาอยู่ในชมรมนี้เลย เป็นอีกชมรมที่น่าสนใจจริงๆ
+                            และขอแอบกระซิบ เพิ่มเติมว่าปีนี้ทางชมรมมีกิจกรรมการอบรมปฐมพยาบาลเบื้องต้น
+                            การดับเพลิงขั้นพื้นฐานอีกด้วย</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/a66a1d84-28c8-4d80-82a0-9c2bcae5c4f3.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมโรทาแรคท์</h5>
+                        <p class="card-text">เปิดโลกกิจกรรมสำหรับนักศึกษาที่ชื่นชอบการทำจิตอาสา
+                            ชมรมโรตาแรคท์พร้อมจะพานักศึกษาที่สนใจไปออกค่ายด้วยกัน มาร่วมสร้างความดีและเป็นจิตอาสา
+                            ถ้าอยากรู้ว่าโรตาแรคท์มีดีที่อะไร ทำประโยชน์อะไรให้กับสังคมบ้าง
+                            ก็เตรียมตัวให้พร้อมแล้วไปสมัครเข้าชมรมได้เลย</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/a9055f5d-0336-4012-b7c4-964f572c5ab8.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมปฐกถาและโต้วาที</h5>
+                        <p class="card-text">ใครที่ช่างเม้าท์ ช่างพูด แล้วอยากอัปเกรดการพูดให้ดูมีสกิล
+                            ต้องมาเจอกันที่นี่ ชมรมที่จะทำให้เด็กบียูเป็นนักพูดมืออาชีพ เป็นพิธีกร ผู้ดำเนินรายการ
+                            และนักโต้วาที นอกจากนี้ยังมีการสอนทักษะการพูด มารยาทไทย รวมไปถึงการพัฒนาบุคลิกภาพอีกด้วย</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/8bff59f6-be27-4524-bc7c-3ea2b66ec43d.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมถ่ายภาพ</h5>
+                        <p class="card-text">ชมรมนี้เราจะได้พบปะกับเพื่อน ๆ นักศึกษา ที่ชื่นชอบถ่ายภาพเหมือนกัน
+                            ซึ่งในชมรมนี้เองจะมีสอนเทคนิคการถ่ายภาพ และการออกทริปไปถ่ายภาพตามสถานที่ต่างๆ
+                            นอกจากนี้ผลงานการถ่ายภาพต่าง ๆ ก็จะได้จัดแสดงในนิทรรศการภาพถ่ายอีกด้วย
+                            เรียกได้ว่าใครที่ชอบเล่นกล้อง ชอบถ่ายรูป ห้ามพลาดชมรมนี้เลย</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/e5833056-cceb-4a71-a4b9-8f0e482b54cf.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมดนตรีสากลและขับร้องประสานเสียง</h5>
+                        <p class="card-text">เด็ก BU สายดนตรีห้ามพลาด เพราะเรามีชมรมดนตรีสากลและการขับร้องประสานเสียง
+                            ในชมรมดนตรีสากล จะแบ่งเป็น 3 กลุ่ม ใครที่ชอบเล่นใหญ่ จัดเต็ม ชอบปล่อยพลังเสียง มาเข้าร่วมทีม
+                            Chorus ส่วนใครที่ชอบเล่นเพลงสบายๆ มีกีตาร์โปร่งคลอบรรเลงไปตามจังหวะ ต้องมาแจมกันที่ Folk
+                            Song แต่ถ้าใครที่ชอบเล่นดนตรีแบบจัดเต็มครบเครื่องต้องมารวมกันตรงนี้
+                            การประกวดนักร้องและวงดนตรีที่จัดขึ้นเป็นประจำทุกปี ภายใต้ชื่อ BU Music Contest
+                            สำหรับใครที่มีใจรักในเสียงเพลงและเสียงดนตรีห้ามพลาด</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/8b5f5cd4-c313-41dc-90c1-a0a9f1dc6ce8.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมดนตรีและนาฏศิลป์ไทย</h5>
+                        <p class="card-text">ภูมิใจพร้อมอวดให้ชาวโลกได้รับรู้ว่าไทยเราก็มีดี
+                            ไม่ใช่แค่อัตลักษณ์แต่รวมทุกอย่างที่มีความเป็นไทย
+                            พร้อมให้นักศึกษาได้จัดเต็มความสามารถทางดนตรีและนาฏศิลป์ไทยอย่างเต็มที่ ใครที่ชอบเล่นใหญ่
+                            และชื่นชอบการแสดงออก ที่นี่มีเวทีพร้อมให้ปล่อยของในการแสดงงานต่างๆ ทั้งกิจกรรมของ ม.กรุงเทพ
+                            และหน่วยงานต่างๆ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/007a18b4-6ccf-4846-9014-1da83237f503.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมค่ายอาสาพัฒนา</h5>
+                        <p class="card-text">ออกค่าย ไปช่วยเหลือผู้คน และไปทำกิจกรรมจิตอาสา ชมรมค่ายอาสาพัฒนา
+                            เป็นอีกหนึ่งความสุขในรั้วมหาวิทยาลัยที่หลายๆ
+                            คนคงคิดไว้ว่าครั้งหนึ่งจะต้องไปร่วมออกค่ายให้ได้
+                            ชมรมนี้ถือว่าตอบโจทย์สายลุยที่อยากไปช่วยพัฒนาถิ่นฐานในต่างจังหวัดให้ดีขึ้น
+                            สำหรับใครที่ชื่นชอบงานอาสาชอบช่วยเหลือคนอื่น ต้องสนใจอยากเข้าร่วมชมรมนี้แน่นอน
+                            กิจกรรมหลักของชมรมนี้จะเป็นการชักชวนกันไปออกค่าย พาทุกคนไปสร้างสาธาณะประโยชน์ตามชนบท
+                            บอกเลยว่าถึงกิจกรรมจะดูเหนื่อย แต่ความปลื้มใจและรอยยิ้มที่ได้ตอบเเทนกลับมา
+                            ถือว่าคุ้มค่าแน่นอน</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/0f3c9758-4e33-4603-a569-520705c26f3a.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมการตลาด</h5>
+                        <p class="card-text">ไม่จำเป็นต้องเรียนบริหาร ก็รู้เรื่องการตลาดได้ เพราะชมรมการตลาด
+                            จะสอนทุกคนให้รู้ลึกถึงหลักกลยุทธ์การตลาดที่จำเป็นในการทำงานจริง
+                            มีรุ่นพี่ใจดีคอยให้คำแนะนำอย่างใกล้ชิด #การตลาดง่ายนิดเดียว</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://contents.bu.ac.th/contents/images/activity-clubs/047dbaec-8c81-4fb7-b5d8-367dedd0b1da.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ชมรมกระจายเสียง</h5>
+                        <p class="card-text">ใครอยากเป็นดีเจ และชื่นชอบการฟังเพลงมาทางนี้
+                            ขอต้อนรับเข้าสู่ชมรมกระจายเสียง ชมรมที่จะทำให้นักศึกษาได้โชว์ตัวตนและปล่อยพลัง
+                            โดยนักศึกษาจะได้เรียนรู้การทำรายการวิทยุในทุกตำแหน่ง ไม่ว่าจะเป็น DJ, VJ, Music Programmer,
+                            Creative, Production แถมยังไปดูงานตามคลื่นวิทยุอีกด้วย
+                            และที่สำคัญชมรมนี้เป็นครอบครัวใหญ่ที่อบอุ่น</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
