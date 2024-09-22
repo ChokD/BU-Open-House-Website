@@ -47,7 +47,8 @@
             /></a>
             </div>
             <div class="col-4 d-flex justify-content-end align-items-center">
-                <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+                <a id="signUpButton" class="btn btn-sm btn-outline-secondary text-white" href="Sign-up.html">-</a>
+                <a id="signInButton" class="btn btn-sm btn-outline-secondary text-white" href="Sign-up.html">Sign up</a>
             </div>
         </div>
     </header>
@@ -613,5 +614,20 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const username = localStorage.getItem('username');
+          if (username) {
+              const signUpButton = document.getElementById('signUpButton');
+              signUpButton.textContent = username;
+              signUpButton.href = '#';
+          }
+
+          const signInButton = document.getElementById('signInButton');
+          signInButton.addEventListener('click', function() {
+              window.location.href = 'index.html';
+          });
+      });
+    </script>
 </body>
 </html>
