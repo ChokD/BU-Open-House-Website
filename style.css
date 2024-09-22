@@ -35,6 +35,11 @@ body {
   box-shadow: #f4f3f3;
   border-radius: 20px;
 }
+
+h1, h3 {
+  animation: fadeInUp 1s ease-in-out;
+}
+
 header {
   background: #742f86;
   color: #fff;
@@ -42,7 +47,6 @@ header {
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   animation: slideIn 1s ease-out;
-  border-radius: 5px;
 }
 
 header img {
@@ -54,10 +58,38 @@ header img {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
   margin: 15px 0;
   display: block;
   animation: fadeIn 1s ease-in-out;
+}
+
+.typewriter {
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid;
+  animation: typing 5s steps(22) forwards, blink 1s step-end infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .boxRegistration {
@@ -263,6 +295,13 @@ img {
 .logo:hover {
   transform: scale(1.25);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.zoom-on-hover {
+  transition: transform 0.3s ease;
+}
+.zoom-on-hover:hover {
+  transform: scale(1.1);
 }
 
 .under {
