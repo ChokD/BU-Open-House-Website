@@ -21,23 +21,46 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <style>
+      .hero-section {
+          background-image: url('img/thinking.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          min-height: 400px;
+          position: relative;
+          color: white;
+      }
+      .hero-content {
+          position: relative;
+          z-index: 1;
+      }
+      .hero-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+      }
+  </style>
   </head>
   <body>
-    <header class="border-bottom lh-1 py-3 px-8 mx-3">
+    <header>
       <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-4 text-left">
-          <a href="index.html"
+          <div class="col-4 text-left d-flex justify-content-start">
+            <a href="index.html"
             ><img
               src="img\BULogo1.png"
               style="object-position: center"
               height="30"
           /></a>
-        </div>
-        <div class="col-4 d-flex justify-content-end align-items-center">
-          <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
-        </div>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+              <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+          </div>
       </div>
-    </header>
+  </header>
     <div
       class="flex justify-between items-center px-8 mx-3 bg-blue-400 w-full h-[80px] rounded-2xl"
     >
@@ -55,8 +78,12 @@
           <a class="nav-item nav-link link-body-emphasis" href="speaker.html"
             >Speaker</a
           >
-          <a class="nav-item nav-link link-body-emphasis" href="#">Workshops</a>
-          <a class="nav-item nav-link link-body-emphasis" href="#">Gallery</a>
+          <a class="nav-item nav-link link-body-emphasis" href="workshop.html"
+            >Workshops</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="Gallery.html"
+            >Gallery</a
+          >
           <a class="nav-item nav-link link-body-emphasis active" href="faq.html"
             >FAQ</a
           >
@@ -68,23 +95,26 @@
           <a class="nav-item nav-link link-body-emphasis" href="contactUs.html"
             >Contact</a
           >
-          <a class="nav-item nav-link link-body-emphasis" href="map.html">Map</a>
+          <a class="nav-item nav-link link-body-emphasis" href="map.html"
+            >Map</a
+          >
           <a class="nav-item nav-link link-body-emphasis" href="sponsors.html"
             >Sponsors</a
           >
         </nav>
       </div>
     </div>
-    <div
-      class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"
-    >
-      <div class="col-md-6 p-lg-5 mx-auto my-5">
-        <h1 class="display-3 fw-bold">FAQ สิ่งที่คุณอยากรู้</h1>
-        <h3 class="fw-normal text-muted mb-3">
-          เรามีคำตอบ
-        </h3>
+
+    <div class="hero-section position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+      <div class="hero-overlay"></div>
+      <div class="hero-content col-md-6 p-lg-5 mx-auto my-5">
+          <h1 class="display-3 fw-bold">FAQ สิ่งที่คุณอยากรู้</h1>
+          <h3 class="fw-normal mb-3">
+              เรามีคำตอบ
+          </h3>
       </div>
-    </div>
+  </div>
+
     <div class="ask">
       <div class="faq-container">
         <div class="faq-box mb-3 p-3 border">
