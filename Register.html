@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <style>
+    body {
+      background: white;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .loginbox {
+      width: 350px;
+      height: 550px; /* Increased height from 450px to 550px */
+      background: #1c2833;
+      color: white;
+      margin: 70px auto;
+      border-radius: 10px;
+      text-align: center;
+      padding: 0 20px;
+      padding-bottom: 10px;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: -60px;
+    }
+
+    label {
+      font-size: 18px;
+      display: block;
+      margin: 10px 0;
+      text-align: left;
+      padding-left: 10px;
+      /* Added this line */
+    }
+
+    input {
+      width: 80%;
+      margin: 0 auto 20px auto;
+      display: block;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid #fff;
+      height: 40px;
+      outline: none;
+      color: white;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      border: none;
+      outline: none;
+      height: 40px;
+      border-radius: 20px;
+      background: #fb2525;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fb2525; /* Changed color to make it more visible */
+      display: block;
+      margin: 10px auto;
+    }
+
+    input[type="submit"]:hover {
+      background: blueviolet;
+    }
+
+    .nav-item {
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    header,
+    nav {
+      padding: 0 20px;
+    }
+
+    .full-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px 10px 0 0;
+      
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="border-bottom lh-1 py-3 px-8 mx-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 text-left">
+        <a href="index.html">
+          <img src="img/BULogo1.png" style="object-position: center" height="30" alt="BU Logo" />
+        </a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+      </div>
+    </div>
+  </header>
+  <div class="flex justify-between items-center px-8 mx-3 bg-blue-400 w-full h-[80px] rounded-2xl">
+    <div class="md:flex gap-8 hidden">
+      <nav class="nav nav-underline justify-content-between">
+        <a class="nav-item nav-link link-body-emphasis" href="index.html">Home</a>
+        <a class="nav-item nav-link link-body-emphasis" href="about.html">About</a>
+        <a class="nav-item nav-link link-body-emphasis" href="schedule.html">Schedule</a>
+        <a class="nav-item nav-link link-body-emphasis" href="speaker.html">Speaker</a>
+        <a class="nav-item nav-link link-body-emphasis" href="#">Workshops</a>
+        <a class="nav-item nav-link link-body-emphasis" href="Gallery.html">Gallery</a>
+        <a class="nav-item nav-link link-body-emphasis" href="faq.html">FAQ</a>
+        <a class="nav-item nav-link link-body-emphasis active" href="registration.html">Registration</a>
+        <a class="nav-item nav-link link-body-emphasis" href="contactUs.html">Contact</a>
+        <a class="nav-item nav-link link-body-emphasis" href="map.html">Map</a>
+        <a class="nav-item nav-link link-body-emphasis" href="sponsors.html">Sponsors</a>
+      </nav>
+    </div>
+  </div>
+  <section class="container">
+    <div class="loginbox"><br>
+      <img src="img/bu-graduate.png" alt="BU Graduate" style="width:110px;height:90px;" class="center">
+      <br><br>
+      <h1>Register</h1>
+      <form id="signupForm" onsubmit="storeUserData(event)">
+        <label>Username</label>
+        <input type="text" id="username" placeholder="Enter Username" required />
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter Password" required />
+        <input type="submit" value="Sign In" />
+      </form>
+    </div>
+  </section>
+  <footer class="under" style="padding: 30px 250px; color: white; background-color: #525960;">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-4 text-left py-3" style="font-size: 18px; color: white">
+        <p>
+          9, 1 Phahonyothin Rd, Khlong Nueng,<br />
+          Khlong Luang, Pathum Thani 12120
+        </p>
+      </div>
+      <div class="col-4 d-flex flex-column justify-content-end align-items-end" style="font-size: 24px">
+        <a href="https://www.facebook.com/buconnectonline" class="mb-2 link-style" style="color: white">
+          <i class="fa-brands fa-facebook"></i>
+          <span style="display: none">Facebook</span>Facebook
+        </a>
+        <a href="https://www.instagram.com/buconnectonline/?hl=th" class="link-style" style="color: white">
+          <i class="fa-brands fa-instagram"></i>
+          <span style="display: none">Instagram</span>Instagram
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    function storeUserData(event) {
+      event.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      localStorage.setItem('username', username);
+      localStorage.setItem('password', password);
+
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Success',
+        text: 'User data stored successfully!',
+      }).then(() => {
+
+        window.location.href = 'Sign-up.html';
+      });
+    }
+  </script>
+</body>
+
+</html>

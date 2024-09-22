@@ -15,16 +15,12 @@
   text-decoration: underline;
 }
 
-.under {
-  background-color: #751c8b;
-}
-
 body {
   font-family: "Kanit", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #7a7a7a;
 }
 
 header {
@@ -172,7 +168,7 @@ img {
   border: 1px solid #430357;
   padding: 20px;
   border-radius: 10px;
-  background-color: #fff7f7;
+  background-color: #dfdddd;
   margin: 15px auto;
   max-width: 1000px;
 }
@@ -232,6 +228,14 @@ img {
 .logo:hover {
   transform: scale(1.25);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.under {
+  padding: 30px;
+  padding-left: 250px;
+  padding-right: 250px;
+  color: white;
+  background-color: #343a40;
 }
 
 @media screen and (max-width: 1000px) {

@@ -1,147 +1,139 @@
 <!DOCTYPE html>
 <html lang="th">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ผู้บรรยาย มหาวิทยาลัยกรุงเทพฯ</title>
     <link rel="stylesheet" href="style.css" />
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-        crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
     ></script>
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #751c8b;
-            color: #fff;
-            padding: 20px 20px;
-            text-align: center;
-            animation: slideIn 1s ease-out;
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: #751c8b;
+        color: #fff;
+        padding: 20px 20px;
+        text-align: center;
+        animation: slideIn 1s ease-out;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        animation: slideIn 1s ease-out;
+      }
+      h2 {
+        color: black;
+        font-size: 2.5em;
+        border-bottom: 3px solid #0056a0;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        animation: fadeInUp 1s ease-in-out;
+      }
+      .speaker-card {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        animation: slideIn 1s ease-out;
+      }
+      .speaker-card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 20px;
+        animation: slideIn 1s ease-out;
+      }
+      .speaker-info {
+        flex-grow: 1;
+        animation: slideIn 1s ease-out;
+      }
+      .lecture-content {
+        margin-top: 10px;
+        background-color: #e9ecef;
+        padding: 10px;
+        border-radius: 8px;
+      }
 
+      @keyframes slideIn {
+        from {
+          transform: translateY(-100%);
+          opacity: 0;
         }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
         .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            animation: slideIn 1s ease-out;
-
+          width: 95%;
         }
-        h2 {
-            color: black;
-            font-size: 2.5em;
-            border-bottom: 3px solid #0056a0;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-align: center;
-            animation: fadeInUp 1s ease-in-out;
-
-        }
-        .speaker-card {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            animation: slideIn 1s ease-out;
-
-        }
-        .speaker-card img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-right: 20px;
-            animation: slideIn 1s ease-out;
-
-        }
-        .speaker-info {
-            flex-grow: 1;
-            animation: slideIn 1s ease-out;
-
-        }
-        .lecture-content {
-            margin-top: 10px;
-            background-color: #e9ecef;
-            padding: 10px;
-            border-radius: 8px;
-        }
-        
-        
-        @keyframes slideIn {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="row flex-nowrap justify-content-between align-items-center">
-            <div class="col-4 text-left d-flex justify-content-start">
-              <a href="index.html"
-              ><img
-                src="img\BULogo1.png"
-                style="object-position: center"
-                height="30"
-            /></a>
-            </div>
-            <div class="col-4 d-flex justify-content-end align-items-center">
-                <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
-            </div>
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 text-left d-flex justify-content-start">
+          <a href="index.html"
+            ><img
+              src="img\BULogo1.png"
+              style="object-position: center"
+              height="30"
+          /></a>
         </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+        </div>
+      </div>
     </header>
 
     <div
@@ -158,252 +150,255 @@
           <a class="nav-item nav-link link-body-emphasis" href="schedule.html"
             >Schedule</a
           >
-          <a class="nav-item nav-link link-body-emphasis active" href="speaker.html">Speaker</a>
-          <a class="nav-item nav-link link-body-emphasis" href="workshop.html">Workshops</a>
-          <a class="nav-item nav-link link-body-emphasis" href="Gallery.html">Gallery</a>
+          <a
+            class="nav-item nav-link link-body-emphasis active"
+            href="speaker.html"
+            >Speaker</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="workshop.html"
+            >Workshops</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="Gallery.html"
+            >Gallery</a
+          >
           <a class="nav-item nav-link link-body-emphasis" href="faq.html"
             >FAQ</a
           >
-          <a class="nav-item nav-link link-body-emphasis" href="registration.html"
+          <a
+            class="nav-item nav-link link-body-emphasis"
+            href="registration.html"
             >Registration</a
           >
           <a class="nav-item nav-link link-body-emphasis" href="contactUs.html"
             >Contact</a
           >
-          <a class="nav-item nav-link link-body-emphasis" href="map.html">Map</a>
-          <a class="nav-item nav-link link-body-emphasis" href="sponsors.html">Sponsors</a>
+          <a class="nav-item nav-link link-body-emphasis" href="map.html"
+            >Map</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="sponsors.html"
+            >Sponsors</a
+          >
         </nav>
       </div>
     </div>
 
-
     <div class="container">
-        <h2>รายชื่อผู้บรรยาย</h2>
-        
-        <div class="speaker-card">
-            <img src="img/Mteacher.png" alt="อ.สมชาย นิโคลัส">
-            <div class="speaker-info">
-                <h4>อ.สมชาย นิโคลัส</h4>
-                <p>คณะ: เทคโนโลยีและนวัตกรรม</p>
-                <p>ห้อง: A1/407</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>การเป็นโปรแกรมเมอร์ง่ายๆโดยใช้ Oracle</p>
-            </div>
-        </div>
-        
-        <div class="speaker-card">
-            <img src="img/Wteacher.png" alt="อ.สมหญิง สุดสวย">
-            <div class="speaker-info">
-                <h4>อ.สมหญิง สุดสวย</h4>
-                <p>คณะ: วิศวกรรม</p>
-                <p>ห้อง: B4/607</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>ขั้นตอนการออกแบบ และสร้างสรรค์แผงวงจร</p>
-            </div>
-        </div>
-        
-        <div class="speaker-card">
-            <img src="img/Wteacher.png" alt="อ.สุดา นารีรัตน์">
-            <div class="speaker-info">
-                <h4>อ.สุดา นารีรัตน์</h4>
-                <p>คณะ: นิติศาสตร์</p>
-                <p>ห้อง: C3/405</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>กฎหมายที่ทุกคนควรรู้และเข้าใจ</p>
-            </div>
-        </div>
+      <h2>รายชื่อผู้บรรยาย</h2>
 
-        <div class="speaker-card">
-            <img src="img/Mteacher.png" alt="อ.มนตรี ไมเคิล">
-            <div class="speaker-info">
-                <h4>อ.มนตรี ไมเคิล</h4>
-                <p>คณะ: นิเทศศาสตร์</p>
-                <p>ห้อง: C2/504</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>การเป็น Content Creator ง่ายๆ และการสร้างสรรค์ Content</p>
-            </div>
+      <div class="speaker-card">
+        <img src="img/Mteacher.png" alt="อ.สมชาย นิโคลัส" />
+        <div class="speaker-info">
+          <h4>อ.สมชาย นิโคลัส</h4>
+          <p>คณะ: เทคโนโลยีและนวัตกรรม</p>
+          <p>ห้อง: A1/407</p>
         </div>
-
-        <div class="speaker-card">
-            <img src="img/Wteacher.png" alt="อ.สุดใจ ใฝ่ฝัน">
-            <div class="speaker-info">
-                <h4>อ.สุดใจ ใฝ่ฝัน</h4>
-                <p>คณะ: บริหารธุรกิจ</p>
-                <p>ห้อง: A5/202</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>การบริหารและการเจาะกลุ่มตลาดธุรกิจที่สามารถใช้ได้ในชีวิตประจำวัน</p>
-            </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>การเป็นโปรแกรมเมอร์ง่ายๆโดยใช้ Oracle</p>
         </div>
-
-        <div class="speaker-card">
-            <img src="img/Mteacher.png" alt="อ.มนตรี มั่งคั่งร่ำรวย">
-            <div class="speaker-info">
-                <h4>อ.มนตรี มั่งคั่งร่ำรวย</h4>
-                <p>คณะ: บัญชี</p>
-                <p>ห้อง: A7/302</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>การคำนวณอย่างแม่นยำ รวดเร็ว และมีประสิทธิภาพ</p>
-            </div>
-        </div>
-
-        <div class="speaker-card">
-            <img src="img/Mteacher.png" alt="อ.วิเชียร มนุษย์นิยม">
-            <div class="speaker-info">
-                <h4>อ.วิเชียร มนุษย์นิยม</h4>
-                <p>คณะ: มนุษยศาสตร์</p>
-                <p>ห้อง: C5/101</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>เข้าใจความเป็นมนุษย์ และการกลั่นกรองข้อมูล</p>
-            </div>
-        </div>
-
-        <div class="speaker-card">
-            <img src="img/Mteacher.png" alt="อ.เจริญ รุ่งเรือง">
-            <div class="speaker-info">
-                <h4>อ.เจริญ รุ่งเรือง</h4>
-                <p>คณะ: เศรษฐศาสตร์</p>
-                <p>ห้อง: A1/302</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>วิเคราะห์เศรษฐกิจง่ายๆด้วยกฎ 3 ข้อ</p>
-            </div>
-        </div>
-
-        <div class="speaker-card">
-            <img src="img/Mteacher.png" alt="อ.กิตติพัฒน์ ช่ำชอง">
-            <div class="speaker-info">
-                <h4>อ.กิตติพัฒน์ ช่ำชอง</h4>
-                <p>คณะ: การสร้างเจ้าของธุรกิจและบริหารกิจการ</p>
-                <p>ห้อง: C2/203</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>เพิ่มทักษะความเป็นผู้นำและนำไปปรับใช้ในการทำงานได้</p>
-            </div>
-        </div>
-
-        <div class="speaker-card">
-            <img src="img/Wteacher.png" alt="อ.กฤตยา พัฒนา">
-            <div class="speaker-info">
-                <h4>อ.กฤตยา พัฒนา</h4>
-                <p>คณะ: หลักสูตรนานาชาติ</p>
-                <p>ห้อง: B3/205</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>ภาษาไม่ยากอย่างที่คิด</p>
-            </div>
-        </div>
-
-        <div class="speaker-card">
-            <img src="img/Mteacher.png" alt="อ.สุขุม พูนทรัพย์">
-            <div class="speaker-info">
-                <h4>อ.สุขุม พูนทรัพย์</h4>
-                <p>คณะ: การท่องเที่ยว</p>
-                <p>ห้อง: C2/604</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>วัฒนธรรมและภาษาท้องถิ่น</p>
-            </div>
-        </div>
-
-        <div class="speaker-card">
-            <img src="img/Wteacher.png" alt="อ.ปราณี ดำรงค์">
-            <div class="speaker-info">
-                <h4>อ.ปราณี ดำรงค์</h4>
-                <p>คณะ: สถาปัตย์</p>
-                <p>ห้อง: B5/406</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>ออกแบบง่ายๆด้วยการกะระยะ</p>
-            </div>
-        </div>
-
-        <div class="speaker-card">
-            <img src="img/Wteacher.png" alt="อ.จิรัฏฐ์ มีสุข">
-            <div class="speaker-info">
-                <h4>อ.จิรัฏฐ์ มีสุข</h4>
-                <p>คณะ: หลักสูตรนานาชาติจีน</p>
-                <p>ห้อง: C7/506</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>เพิ่มทักษะภาษาที่ 3</p>
-            </div>
-        </div>
-
-        <div class="speaker-card">
-            <img src="img/Mteacher.png" alt="อ.วรชัย มิตรชาตรี">
-            <div class="speaker-info">
-                <h4>อ.วรชัย มิตรชาตรี</h4>
-                <p>คณะ: ศิลปกรรมศาสตร์</p>
-                <p>ห้อง: B1/203</p>
-            </div>
-            <div class="lecture-content">
-                <h5>เนื้อหาบรรยาย:</h5>
-                <p>ปลุกความเป็นศิลปินในตัวคุณ</p>
-            </div>
-        </div>
-                
-
-
-    </div>
-    <footer
-    class="under"
-    style="
-      padding: 30px;
-      padding-left: 250px;
-      padding-right: 250px;
-      color: white;
-      background-color: #343a40;
-    "
-  >
-    <div class="row justify-content-between align-items-center">
-      <div class="col-4 text-left py-3" style="font-size: 18px; color: white">
-        <p>
-          9, 1 Phahonyothin Rd, Khlong Nueng,<br />
-          Khlong Luang, Pathum Thani 12120
-        </p>
       </div>
-      <div
-        class="col-4 d-flex flex-column justify-content-end align-items-end"
-        style="font-size: 24px"
-      >
-        <a
-          href="https://www.facebook.com/buconnectonline"
-          class="mb-2 link-style"
-          style="color: white"
-        >
-          <i class="fa-brands fa-facebook"></i>
-          <span style="display: none">Facebook</span>Facebook
-        </a>
-        <a
-          href="https://www.instagram.com/buconnectonline/?hl=th"
-          class="link-style"
-          style="color: white"
-        >
-          <i class="fa-brands fa-instagram"></i>
-          <span style="display: none">Instagram</span>Instagram
-        </a>
+
+      <div class="speaker-card">
+        <img src="img/Wteacher.png" alt="อ.สมหญิง สุดสวย" />
+        <div class="speaker-info">
+          <h4>อ.สมหญิง สุดสวย</h4>
+          <p>คณะ: วิศวกรรม</p>
+          <p>ห้อง: B4/607</p>
+        </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>ขั้นตอนการออกแบบ และสร้างสรรค์แผงวงจร</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="img/Wteacher.png" alt="อ.สุดา นารีรัตน์" />
+        <div class="speaker-info">
+          <h4>อ.สุดา นารีรัตน์</h4>
+          <p>คณะ: นิติศาสตร์</p>
+          <p>ห้อง: C3/405</p>
+        </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>กฎหมายที่ทุกคนควรรู้และเข้าใจ</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="img/Mteacher.png" alt="อ.มนตรี ไมเคิล" />
+        <div class="speaker-info">
+          <h4>อ.มนตรี ไมเคิล</h4>
+          <p>คณะ: นิเทศศาสตร์</p>
+          <p>ห้อง: C2/504</p>
+        </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>การเป็น Content Creator ง่ายๆ และการสร้างสรรค์ Content</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="img/Wteacher.png" alt="อ.สุดใจ ใฝ่ฝัน" />
+        <div class="speaker-info">
+          <h4>อ.สุดใจ ใฝ่ฝัน</h4>
+          <p>คณะ: บริหารธุรกิจ</p>
+          <p>ห้อง: A5/202</p>
+        </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>
+            การบริหารและการเจาะกลุ่มตลาดธุรกิจที่สามารถใช้ได้ในชีวิตประจำวัน
+          </p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="img/Mteacher.png" alt="อ.มนตรี มั่งคั่งร่ำรวย" />
+        <div class="speaker-info">
+          <h4>อ.มนตรี มั่งคั่งร่ำรวย</h4>
+          <p>คณะ: บัญชี</p>
+          <p>ห้อง: A7/302</p>
+        </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>การคำนวณอย่างแม่นยำ รวดเร็ว และมีประสิทธิภาพ</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="img/Mteacher.png" alt="อ.วิเชียร มนุษย์นิยม" />
+        <div class="speaker-info">
+          <h4>อ.วิเชียร มนุษย์นิยม</h4>
+          <p>คณะ: มนุษยศาสตร์</p>
+          <p>ห้อง: C5/101</p>
+        </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>เข้าใจความเป็นมนุษย์ และการกลั่นกรองข้อมูล</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="img/Mteacher.png" alt="อ.เจริญ รุ่งเรือง" />
+        <div class="speaker-info">
+          <h4>อ.เจริญ รุ่งเรือง</h4>
+          <p>คณะ: เศรษฐศาสตร์</p>
+          <p>ห้อง: A1/302</p>
+        </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>วิเคราะห์เศรษฐกิจง่ายๆด้วยกฎ 3 ข้อ</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="img/Mteacher.png" alt="อ.กิตติพัฒน์ ช่ำชอง" />
+        <div class="speaker-info">
+          <h4>อ.กิตติพัฒน์ ช่ำชอง</h4>
+          <p>คณะ: การสร้างเจ้าของธุรกิจและบริหารกิจการ</p>
+          <p>ห้อง: C2/203</p>
+        </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>เพิ่มทักษะความเป็นผู้นำและนำไปปรับใช้ในการทำงานได้</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="img/Wteacher.png" alt="อ.กฤตยา พัฒนา" />
+        <div class="speaker-info">
+          <h4>อ.กฤตยา พัฒนา</h4>
+          <p>คณะ: หลักสูตรนานาชาติ</p>
+          <p>ห้อง: B3/205</p>
+        </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>ภาษาไม่ยากอย่างที่คิด</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="img/Mteacher.png" alt="อ.สุขุม พูนทรัพย์" />
+        <div class="speaker-info">
+          <h4>อ.สุขุม พูนทรัพย์</h4>
+          <p>คณะ: การท่องเที่ยว</p>
+          <p>ห้อง: C2/604</p>
+        </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>วัฒนธรรมและภาษาท้องถิ่น</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="img/Wteacher.png" alt="อ.ปราณี ดำรงค์" />
+        <div class="speaker-info">
+          <h4>อ.ปราณี ดำรงค์</h4>
+          <p>คณะ: สถาปัตย์</p>
+          <p>ห้อง: B5/406</p>
+        </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>ออกแบบง่ายๆด้วยการกะระยะ</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="img/Wteacher.png" alt="อ.จิรัฏฐ์ มีสุข" />
+        <div class="speaker-info">
+          <h4>อ.จิรัฏฐ์ มีสุข</h4>
+          <p>คณะ: หลักสูตรนานาชาติจีน</p>
+          <p>ห้อง: C7/506</p>
+        </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>เพิ่มทักษะภาษาที่ 3</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="img/Mteacher.png" alt="อ.วรชัย มิตรชาตรี" />
+        <div class="speaker-info">
+          <h4>อ.วรชัย มิตรชาตรี</h4>
+          <p>คณะ: ศิลปกรรมศาสตร์</p>
+          <p>ห้อง: B1/203</p>
+        </div>
+        <div class="lecture-content">
+          <h5>เนื้อหาบรรยาย:</h5>
+          <p>ปลุกความเป็นศิลปินในตัวคุณ</p>
+        </div>
       </div>
     </div>
-  </footer>
-</body>
+    <footer class="under">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-4 text-left py-3" style="font-size: 18px; color: white">
+          <p>
+            9, 1 Phahonyothin Rd, Khlong Nueng,<br />
+            Khlong Luang, Pathum Thani 12120
+          </p>
+        </div>
+        <div
+          class="col-4 d-flex flex-column justify-content-end align-items-end"
+          style="font-size: 24px"
+        >
+          <a
+            href="https://www.facebook.com/buconnectonline"
+            class="mb-2 link-style"
+            style="color: white"
+          >
+            <i class="fa-brands fa-facebook"></i>
+            <span style="display: none">Facebook</span>Facebook
+          </a>
+          <a
+            href="https://www.instagram.com/buconnectonline/?hl=th"
+            class="link-style"
+            style="color: white"
+          >
+            <i class="fa-brands fa-instagram"></i>
+            <span style="display: none">Instagram</span>Instagram
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
