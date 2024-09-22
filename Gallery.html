@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1224px;
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .title2 {
+            margin-bottom: 1rem;
+        }
+
+        .photo_gallery {
+            display: flex;
+            gap: 20px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .G-photo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.5s ease, border-radius 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .G-photo img:hover {
+            transform: scale(0.8) rotate(-10deg);
+            border-radius: 20px;
+            box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+        }
+
+        h2 {
+            color: black;
+            font-weight: bold;
+            font-size: 2.5em;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+            animation: fadeInUp 1s ease-in-out;
+
+        }
+
+        h3 {
+            color: black;
+            font-size: 1.5em;
+            border-bottom: 3px solid #0056a0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+            animation: fadeInUp 1s ease-in-out;
+
+        }
+
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            .photo_gallery {
+                flex-direction: column;
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="border-bottom lh-1 py-3 px-8 mx-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 text-left">
+                <a href="index.html"><img src="img\BULogo1.png" style="object-position: center" height="30" /></a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+            </div>
+        </div>
+    </header>
+    <div class="flex justify-between items-center px-8 mx-3 bg-blue-400 w-full h-[80px] rounded-2xl">
+        <div class="md:flex gap-8 hidden">
+            <nav class="nav nav-underline justify-content-between">
+                <a class="nav-item nav-link link-body-emphasis" href="index.html">Home</a>
+                <a class="nav-item nav-link link-body-emphasis" href="about.html">About</a>
+                <a class="nav-item nav-link link-body-emphasis" href="schedule.html">Schedule</a>
+                <a class="nav-item nav-link link-body-emphasis" href="speaker.html">Speaker</a>
+                <a class="nav-item nav-link link-body-emphasis" href="#">Workshops</a>
+                <a class="nav-item nav-link link-body-emphasis active" href="Gallery.html">Gallery</a>
+                <a class="nav-item nav-link link-body-emphasis" href="faq.html">FAQ</a>
+                <a class="nav-item nav-link link-body-emphasis" href="registration.html">Registration</a>
+                <a class="nav-item nav-link link-body-emphasis" href="contactUs.html">Contact</a>
+                <a class="nav-item nav-link link-body-emphasis" href="map.html">Map</a>
+                <a class="nav-item nav-link link-body-emphasis" href="sponsors.html">Sponsors</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Gallery</h2>
+        <h3>เเกลลอรี่</h3>
+        <h4 class="title2"><strong>Our past event</strong> </h4>
+        <div class="photo_gallery">
+            <div class="column">
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T03.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T02.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T04.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T11.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T13.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T21.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T22.jpg" alt="">
+                </div>
+            </div>
+            <div class="column">
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T05.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T06.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T07.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T14.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T15.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T16.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T23.jpg" alt="">
+                </div>
+            </div>
+            <div class="column">
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T08.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T09.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T10.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T17.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T18.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T19.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T20.jpg" alt="">
+                </div>
+                <div class="G-photo">
+                    <img src="img/bu openhouse/T25.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <footer class="under" style="
+      padding: 30px;
+      padding-left: 250px;
+      padding-right: 250px;
+      color: white;
+      background-color: #343a40;
+    ">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-4 text-left py-3" style="font-size: 18px; color: white">
+                <p>
+                    9, 1 Phahonyothin Rd, Khlong Nueng,<br />
+                    Khlong Luang, Pathum Thani 12120
+                </p>
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-end align-items-end" style="font-size: 24px">
+                <a href="https://www.facebook.com/buconnectonline" class="mb-2 link-style" style="color: white">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span style="display: none">Facebook</span>Facebook
+                </a>
+                <a href="https://www.instagram.com/buconnectonline/?hl=th" class="link-style" style="color: white">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span style="display: none">Instagram</span>Instagram
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var modal = document.getElementById("imageModal");
+
+        var modalImg = document.getElementById("modalImage");
+
+        var images = document.querySelectorAll('.G-photo img');
+
+        images.forEach(function (image) {
+            image.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        });
+
+        var span = document.getElementsByClassName("close")[0];
+
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
