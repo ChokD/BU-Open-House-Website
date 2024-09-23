@@ -2,583 +2,466 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshops and Activities</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops and Activities</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
 </head>
 <style>
-    .typewriter {
-        display: flex;
-        justify-content: center;
-        
+  .typewriter {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .typewriter h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 7s steps(22) forwards,
+      blink 1s step-end infinite;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
     }
 
-    .typewriter h1 {
-        overflow: hidden;
-        white-space: nowrap;
-        border-right: 1px solid;
-        animation: typing 7s steps(22) forwards,
-            blink 1s step-end infinite;
-        animation-iteration-count: infinite;
+    to {
+      width: 100%;
     }
+  }
 
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-
-        to {
-            width: 100%;
-        }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
     }
-
-    @keyframes blink {
-        50% {
-            border-color: transparent;
-        }
-    }
-
-    .ag-format-container {
-  width: 1142px;
-  margin: 0 auto;
-}
-
-.ag-courses_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  padding: 50px 0;
-}
-.ag-courses_item {
-  -ms-flex-preferred-size: calc(33.33333% - 30px);
-  flex-basis: calc(33.33333% - 30px);
-
-  margin: 0 15px 30px;
-
-  overflow: hidden;
-
-  border-radius: 28px;
-}
-.ag-courses-item_link {
-  display: block;
-  padding: 30px 20px;
-  background-color: #121212;
-  text-decoration: none;
-
-  overflow: hidden;
-
-  position: relative;
-}
-.ag-courses-item_link:hover,
-.ag-courses-item_link:hover .ag-courses-item_date {
-  text-decoration: none;
-  color: #FFF;
-}
-.ag-courses-item_link:hover .ag-courses-item_bg {
-  -webkit-transform: scale(10);
-  -ms-transform: scale(10);
-  transform: scale(10);
-}
-.ag-courses-item_title {
-  min-height: 87px;
-  margin: 0 0 25px;
-
-  overflow: hidden;
-
-  font-weight: bold;
-  font-size: 16px;
-  color: #FFF;
-
-  z-index: 2;
-  position: relative;
-}
-.ag-courses-item_date-box {
-  font-size: 18px;
-  color: #FFF;
-
-  z-index: 2;
-  position: relative;
-}
-.ag-courses-item_date {
-  font-weight: bold;
-  color: #f9b234;
-
-  -webkit-transition: color .5s ease;
-  -o-transition: color .5s ease;
-  transition: color .5s ease
-}
-.ag-courses-item_bg {
-  height: 128px;
-  width: 128px;
-  background-color: #f9b234;
-
-  z-index: 1;
-  position: absolute;
-  top: -75px;
-  right: -75px;
-
-  border-radius: 50%;
-
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-}
-.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color: #3ecd5e;
-}
-.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-  background-color: #e44002;
-}
-.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
-  background-color: #952aff;
-}
-.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-  background-color: #cd3e94;
-}
-.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-  background-color: #4c49ea;
-}
-
-
-
-@media only screen and (max-width: 979px) {
-  .ag-courses_item {
-    -ms-flex-preferred-size: calc(50% - 30px);
-    flex-basis: calc(50% - 30px);
   }
-  .ag-courses-item_title {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .ag-format-container {
-    width: 96%;
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+    transition: transform .5s ease-in-out;
   }
 
-}
-@media only screen and (max-width: 639px) {
-  .ag-courses_item {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    
+  .card:hover img {
+    transform: scale(1.5) rotate(25deg);
   }
-  .ag-courses-item_title {
-    min-height: 72px;
-    line-height: 1;
-    font-size: 16px;
-  }
-  .ag-courses-item_link {
-    padding: 22px 40px;
-  }
-  .ag-courses-item_date-box {
-    font-size: 16px;
-  }
-}
-
-
-    
-
-    
 </style>
 
 <body>
-    <header class="border-bottom lh-1 py-3 px-8 mx-3">
-        <div class="row flex-nowrap justify-content-between align-items-center">
-            <div class="col-4 text-left">
-                <a href="index.html"><img src="img\BULogo1.png" style="object-position: center" height="30" /></a>
-            </div>
-            <div class="col-4 d-flex justify-content-end align-items-center">
-                <a id="signUpButton" class="btn btn-sm btn-outline-secondary text-white" href="Sign-up.html">-</a>
-                <a id="signInButton" class="btn btn-sm btn-outline-secondary text-white" href="Sign-up.html">Sign up</a>
-            </div>
-        </div>
-    </header>
-    <!-- ส่วนหัว -->
-    <div class="flex justify-between items-center px-8 mx-3 bg-blue-400 w-full h-[80px] rounded-2xl">
-        <div class="md:flex gap-8 hidden">
-            <nav class="nav nav-underline justify-content-between">
-                <a class="nav-item nav-link link-body-emphasis" href="index.html">Home</a>
-                <a class="nav-item nav-link link-body-emphasis" href="about.html">About</a>
-                <a class="nav-item nav-link link-body-emphasis" href="schedule.html">Schedule</a>
-                <a class="nav-item nav-link link-body-emphasis" href="speaker.html">Speaker</a>
-                <a class="nav-item nav-link link-body-emphasis active" href="workshop.html">Workshops</a>
-                <a class="nav-item nav-link link-body-emphasis" href="Gallery.html">Gallery</a>
-                <a class="nav-item nav-link link-body-emphasis" href="faq.html">FAQ</a>
-                <a class="nav-item nav-link link-body-emphasis" href="registration.html">Registration</a>
-                <a class="nav-item nav-link link-body-emphasis" href="contactUs.html">Contact</a>
-                <a class="nav-item nav-link link-body-emphasis" href="map.html">Map</a>
-                <a class="nav-item nav-link link-body-emphasis" href="sponsors.html">Sponsors</a>
-            </nav>
-        </div>
-    </div>
-    <!-- เนื้อหา -->
-    <div class="px-4 py-5 my-1 text-center typewriter">
-        <div>
-            <h1 class="display-5 fw-bold">Workshops & Activities</h1>
-        </div>
-    </div>
-    <!-- เพิ่ม -->
-      <div class="px-4 py-5 my-5 bg-success text-center">
-        <img class="d-block mx-auto mb-4" src="img\workshops\green.svg" alt="" width="200" height="100" >
-        <h1 class="display-5 text-light fw-bold">มาลองเล่นกิจกรรม<br>INNOVATIVE CLUSTER</h1>
+  <header class="border-bottom lh-1 py-3 px-8 mx-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 text-left">
+        <a href="index.html"><img src="img\BULogo1.png" style="object-position: center" height="30" /></a>
       </div>
-    <!-- เพิ่ม -->
-    <div class="ag-format-container">
-      <div class="ag-courses_box">
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>การพัฒนาเกมด้วย Unreal Engine</h5>
-              <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                04.11.2022
-              </span>
-            </div>
-          </a>
-        </div>
-    
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>การเขียนโปรแกรมปัญญาประดิษฐ์เพื่อตรวจจับวัตถุ</h5>
-              <p>คณะวิศวกรรมศาสตร์ | สาขาวิชาวิศวกรรมปัญญาประดิษฐ์และวิทยาการข้อมูล</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                04.11.2022
-              </span>
-            </div>
-          </a>
-        </div>
-    
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>การพัฒนาเกมบนโลกเสมือนจริง Virtual Reality</h5>
-              <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                04.11.2022
-              </span>
-            </div>
-          </a>
-        </div>
-    
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>การสร้างตัวละครด้วย Generative AI</h5>
-              <p>คณะวิศวกรรมศาสตร์ | สาขาวิชาวิศวกรรมมัลติมีเดียและเอ็นเตอร์เทนเมนต์</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                04.11.2022
-              </span>
-            </div>
-          </a>
-        </div>
-    
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>เสริมศักยภาพความคิดสร้างสรรค์ด้วยหุ่นยนต์แขนกล Enhancing Creative Potential with Robotic Arms</h5>
-              <p>คณะวิศวกรรมศาสตร์ | สาขาวิชาวิศวกรรมคอมพิวเตอร์และหุ่นยนต์</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                30.11.2022
-              </span>
-            </div>
-          </a>
-        </div>
-    
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>การสร้าง Visual Effect สำหรับเกม ด้วย Unreal Engine</h5>
-              <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ</p>
-            </div>
-          </a>
-        </div>
-    
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg">
-            </div>
-            <div class="ag-courses-item_title">
-              <h5>เส้นทางสู่อาชีพ พบกับปรมาจารย์วงการเกม</h5>
-              <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ</p>
-            </div>
-          </a>
-        </div>
-    
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>Session Talk and Show Drone</h5>
-              <p>คณะวิศวกรรมศาสตร์</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                31.10.2022
-              </span>
-            </div>
-          </a>
-        </div>
-
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>เทคนิคการพัฒนาระบบและเป็นผู้ปกป้องหมวกขาวในโลกไซเบอร์ White Hacker</h5>
-              <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                31.10.2022
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>A successful story of professional in IT Industry (CS)</h5>
-              <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                31.10.2022
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>นิทรรศการผลงานนักศึกษาทุกสาขาคณะวิศวกรรมศาสตร์
-                </h5>
-              <p>คณะวิศวกรรมศาสตร์</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                31.10.2022
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>เทคนิคการพัฒนาเว็บไซต์เต็มรูปแบบ (Frond End และ Back End)</h5>
-              <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                31.10.2022
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>Interactive Media</h5>
-              <p>คณะวิศวกรรมศาสตร์</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                31.10.2022
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>เทคนิคการวิเคราะห์และการนำเสนอข้อมูล (Data Science and Data Visualization)</h5>
-              <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                31.10.2022
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>A successful story of professional in IT Industry (IT)</h5>
-              <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                31.10.2022
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>การใช้ปัญญาประดิษฐ์วิเคราะห์ธุรกิจ (Business Analyst)</h5>
-              <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                31.10.2022
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>การพัฒนาแอปพลิเคชัน ด้วย Low-Code Application Platform</h5>
-              <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                31.10.2022
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>Industry Challenge Showcase: From Player to Pro-Creator</h5>
-              <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ
-              </p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                31.10.2022
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-    
-            <div class="ag-courses-item_title">
-              <h5>Student Showcase : From Task to Pro-Developer</h5>
-              <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม</p>
-            </div>
-    
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                31.10.2022
-              </span>
-            </div>
-          </a>
-        </div>
-    
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a id="signUpButton" class="btn btn-sm btn-outline-secondary text-white" href="Sign-up.html">-</a>
+        <a id="signInButton" class="btn btn-sm btn-outline-secondary text-white" href="Sign-up.html">Sign up</a>
       </div>
     </div>
-      
-</body>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-          const username = localStorage.getItem('username');
-          if (username) {
-              const signUpButton = document.getElementById('signUpButton');
-              signUpButton.textContent = username;
-              signUpButton.href = '#';
-          }
+  </header>
+  <!-- ส่วนหัว -->
+  <div class="flex justify-between items-center px-8 mx-3 bg-blue-400 w-full h-[80px] rounded-2xl">
+    <div class="md:flex gap-8 hidden">
+      <nav class="nav nav-underline justify-content-between">
+        <a class="nav-item nav-link link-body-emphasis" href="index.html">Home</a>
+        <a class="nav-item nav-link link-body-emphasis" href="about.html">About</a>
+        <a class="nav-item nav-link link-body-emphasis" href="schedule.html">Schedule</a>
+        <a class="nav-item nav-link link-body-emphasis" href="speaker.html">Speaker</a>
+        <a class="nav-item nav-link link-body-emphasis active" href="workshop.html">Workshops</a>
+        <a class="nav-item nav-link link-body-emphasis" href="Gallery.html">Gallery</a>
+        <a class="nav-item nav-link link-body-emphasis" href="faq.html">FAQ</a>
+        <a class="nav-item nav-link link-body-emphasis" href="registration.html">Registration</a>
+        <a class="nav-item nav-link link-body-emphasis" href="contactUs.html">Contact</a>
+        <a class="nav-item nav-link link-body-emphasis" href="map.html">Map</a>
+        <a class="nav-item nav-link link-body-emphasis" href="sponsors.html">Sponsors</a>
+      </nav>
+    </div>
+  </div>
+  <!-- เนื้อหา -->
+  <div class="px-4 py-5 my-1 text-center typewriter">
+    <div>
+      <h1 class="display-5 fw-bold">Workshops & Activities</h1>
+    </div>
+  </div>
+  <!-- เพิ่ม -->
+  <div class="px-4 py-5 my-5 bg-success text-center">
+    <img class="d-block mx-auto mb-4" src="img\workshops\green.svg" width="200" height="100">
+    <h1 class="display-5 text-light fw-bold">มาลองเล่นกิจกรรม<br>INNOVATIVE CLUSTER</h1>
+  </div>
+  <!-- เพิ่ม -->
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">การพัฒนาเกมด้วย Unreal Engine</h5>
+        <p class="card-text">ชวนน้องเกมเมอร์ตัวจริง ที่อยากไปได้ไกลกว่าแค่เป็นผู้เล่น แต่อยากเป็นผู้สร้าง
+          มาร่วมสัมผัสประสบการณ์ในการพัฒนาเกมของจริง ด้วยโปรแกรม Unreal Engine
+          พร้อมทั้งรับฟังคำแนะนำจากผู้เชี่ยวชาญในอุตสาหกรรมเกี่ยวกับเส้นทางอาชีพในสายงานด้านการพัฒนาเกม​โดยตรง<br>
+          สถานที่ : A1-405<br>
+          รอบละ 90 นาที<br>
+          เฉพาะ 29 สิงหาคม - 30 สิงหาคม เวลา 09.00 - 10.30 น.<br>
+          เฉพาะ 29 สิงหาคม - 30 สิงหาคม เวลา 12.00 - 13.30 น.<br>
+          เฉพาะ 31 สิงหาคม เวลา 10.30 - 12.00 น.<br>
+          จำนวนคนต่อรอบ 80 คน</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">การเขียนโปรแกรมปัญญาประดิษฐ์เพื่อตรวจจับวัตถุ</h5>
+        <p class="card-text">ไหนใครชอบโบกมือตามจอตรวจจับอุณหภูมิตามห้าง?
+          อยากรู้กันไหมว่าโปรแกรมเหล่านั้นมีที่มาการทำงานยังไง มาเรียนรู้ของจริงได้ที่ Workshop
+          ที่จะพาทุกคนรู้จักการเขียนโปรแกรม image processing และ object detection โดยใช้ AI
+          พาทุกคนได้ลองเขียนโปรแกรมของจริง มีผลงาน AI เป็นของตัวเอง<br>
+          สถานที่ B4-102<br>
+          เวลา 11.30-12.30 และ 14.30-15.30<br>
+          รอบละ 60 นาที จำนวนผู้เข้าร่วมต่อรอบ 40 คน</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะวิศวกรรมศาสตร์ | สาขาวิชาวิศวกรรมปัญญาประดิษฐ์และวิทยาการข้อมูล</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">การพัฒนาเกมบนโลกเสมือนจริง Virtual Reality</h5>
+        <p class="card-text">ใครที่สนใจเกม VR เป็นพิเศษ ชอบที่ได้ออกท่าทางการเล่มเกมของจริง ชวนน้อง ๆ
+          มารับประสบการณ์ใหม่ ที่ไม่ใช่แค่เล่นเกม แต่คือการสร้างเกมเสมือนจริง มาปฏิบัตจริง
+          เรียนรู้พื้นฐานการใช้งานเครื่องมือสำหรับการพัฒนาเกมในโลกเสมือนจริง (Virtual Reality)<br>
+          สถานที่ : A1-405<br>
+          รอบละ 90 นาที<br>
+          เฉพาะ 29 สิงหาคม - 30 สิงหาคม เวลา 10.30 - 12.00 น.<br>
+          29-31 สิงหาคม เวลา 10.30 - 12.00 และเวลา 13.30 - 15.00 น.<br>
+          จำนวนคนต่อรอบ 80 คน</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">การสร้างตัวละครด้วย Generative AI</h5>
+        <p class="card-text">ใครอยากที่อยากสร้างตัวละครเกม ตัวการ์ตูนเป็นของตัวเองโดยเฉพาะ แต่ฝีมือทางศิลปะอาจจะไปไม่ถึง
+          อย่าเพิ่งท้อไป เพราะ Workshop นี้ จะเปิดโอกาสให้น้อง ๆ ที่สนใจการปั้นตัวละคร มาใช้วิธีเทคโนโลยี AI
+          ฝึกสร้างตัวละครขึ้นมาด้วยตัวเอง ไม่ว่าจะภาพกราฟิกก็สามารถทำได้ ให้น้อง ๆ ได้ของพิเศษสำหรับประกอบใน Portfolio
+          การสร้างเกม การ์ตูน ของตัวเองได้เลย<br>
+          สถานที่ B4-102<br>
+          เวลา 10.00-11.00 น. และ 13.00-14.00 น.<br>
+          รอบละ 60 นาที จำนวนผู้เข้าร่วมต่อรอบ 40 คน</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะวิศวกรรมศาสตร์ | สาขาวิชาวิศวกรรมมัลติมีเดียและเอ็นเตอร์เทนเมนต์</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">Student Showcase : From Task to Pro-Developer</h5>
+        <p class="card-text">น้องๆ ที่สนใจอยากเป็นโปรแกรมเมอร์ขั้นเทพ มาชมการจัดแสดงผลงานสาขาวิชาเทคโนโลยีสารสนเทศ
+          และสาขาวิชาวิทยาการคอมพิวเตอร์ ที่ประยุกต์ด้านการเขียนโปรแกรมร่วมกับเทคโนโลยี พร้อมได้รับความรู้แน่นๆ
+          จากรุ่นพี่<br>
+          สถานที่จัดงาน : โถง A1<br>
+          ระยะเวลา : 09.00 - 16.00 น.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะเทคโนโลยีสารสนเทศและนวัตกรรม</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">การสร้าง Visual Effect สำหรับเกม ด้วย Unreal Engine</h5>
+        <p class="card-text">ใครที่ติดใจกับ Special Effects ภายในเกม ไม่ว่าจะเบิด รถถัง ขี่กระบี่ ฟันดาบ
+          อยากมาลองสัมผัสการสร้างของจริง ต้องมาเข้าร่วม Workshop นี้ พาน้อง ๆ เรียนรู้กระบวนการสร้าง VFX
+          ตั้งแต่ขั้นพื้นฐานไปจนถึงการใช้งานเครื่องมือ Unreal Engine ในการสร้างเอฟเฟกต์ต่าง ๆ ภายในเกม เช่น แสงเงา
+          ระเบิด เพื่อเสริมสร้างอารมณ์และบรรยากาศของเกม โดยผู้เชี่ยวชาญจากภาคอุตสาหกรรมเกมตัวจริงเสียงจริง<br>
+          สถานที่ : A1-405<br>
+          รอบละ 90 นาที<br>
+          เฉพาะ 31 สิงหาคม เวลา 09.00 - 10.30 น. และ เวลา 12.00 - 13.30 น.<br>
+          จำนวนคนต่อรอบ 80 คน</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">เสริมศักยภาพความคิดสร้างสรรค์ด้วยหุ่นยนต์แขนกล Enhancing Creative Potential with Robotic
+          Arms</h5>
+        <p class="card-text">ถ้าในอดีตมีแขนกลคนแปรธาตุ งั้นวันนี้ BU จะมีแขนกลคนโรบอท น้อง ๆ คนไหนที่ชอบเล่นหุ่นยนต์
+          สนใจการสร้างหุ่นยนต์ มาลองฝึกทำของจริงกับ Workshop ที่จะทุกคนฝึกความคิดสร้างสรรค์ ไปพร้อมกับฝึกควบคุมแขนกล
+          ด้วยการใช้โปรแกรมแขนกล Robot Arms เพื่อสร้างชิ้นงานที่มีชิ้นเดียวในโลก<br>
+          สถานที่ B4-101<br>
+          เวลา 11.00-12.00 น. และ 13.00-14.00 น.<br>
+          รอบละ 60 นาที จำนวนผู้เข้าร่วมต่อรอบ 30 คน<br>
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะวิศวกรรมศาสตร์ | สาขาวิชาวิศวกรรมคอมพิวเตอร์และหุ่นยนต์</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">Session Talk and Show Drone</h5>
+        <p class="card-text">29 สิงหาคม 2567<br>
+          บรรยายและเสวนา ในหัวข้อ เทคโนโลยีและแนะนําอาชีพด้านหุ่นยนต์และยานยนต์ไฟฟ้า<br>
+          โดย Mr.Pisut Panyawaraporn (Joe) ตำแหน่ง Project Technical Support Engineer บริษัท HIKVISION THAILAND<br>
+          30 สิงหาคม 2567<br>
+          บรรยายและเสวนา ในหัวข้อ เทคโนโลยีและแนะนําอาชีพด้าน AI ปัญญาประดิษฐ์และวิทยาการข้อมูล
+          โดย<br>
+          1) คุณชวรัฐ นาริต (อาร์ท) ตำแหน่ง : Software Developer บริษัท : ODDS<br>
+          2) คุณบุญญาภรณ์ มีแก้ว (ไอ) ตำแหน่ง : Business/System Analyst บริษัท : ODD<br>
+          3) คุณสุทธิวัฒน์ อ้นเกษม (ขิง) ตำแหน่ง : Software Developer บริษัท : ODDS<br>
+          4) คุณพชรวิทย์ พลูวรรณ์ (พลู) ตำแหน่ง : Software Developer บริษัท : ODDS<br>
+          31 สิงหาคม 2567<br>
+          บรรยายและเสวนา ในหัวข้อ เทคโนโลยีและแนะนําอาชีพด้านมัลติมีเดียและเอ็นเตอร์เทนเมนต์
+          โดย<br>
+          1) คุณภาณุวิชญ์ นาคศุภมิตร (บอนด์) ตำแหน่ง: QC Supervisor บริษัท ไอ-ยูโนะ (ประเทศไทย) จำกัด<br>
+          2) คุณชรัณศ์ ตันสุวรรณรัตน์ (เบอร์ดี้) ตำแหน่ง: Audio Project Manager บริษัท: Andovar Studio, Andovar
+          (Thailand) Limited<br>
+          เวลา 11.00-11.30น. บรรยายและเสวนาจากบริษัท Partner และศิษย์เก่า<br>
+          Show drone ทุกวัน ในเวลา 14.00-14.10 น.<br>
+          สถานที่ เวทีกลาง ห้อง B4-101 ณ</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะวิศวกรรมศาสตร์</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">เส้นทางสู่อาชีพ พบกับปรมาจารย์วงการเกม</h5>
+        <p class="card-text">
+          ได้พบกับปรมาจารย์วงการเกมที่จะมาแชร์ประสบการณ์และแรงบันดาลใจในการสร้างสรรค์ผลงานเกมระดับมืออาชีพ
+          และได้เห็นเส้นทางสู่อาชีพในวงการเกม<br>
+          Game Industry และ Career Path<br>
+          อ.เมธี ช่วยปู่ CEO บริษัท Bugblio Studio และอาจารย์ประจำภาควิชาเกมและสื่อเชิงโต้ตอบ
+          คณะเทคโนโลยีสารสนเทศและนวัตกรรม<br>
+          Game Business<br>
+          คุณ คเชนท์ พุทธิวราวุธ Co-Founder/Producer/Game Director บริษัท FairPlay Studio จำกัด<br>
+          คุณเมธาวุฒิ ศุภกุล Co-Founder บริษัท FairPlay Studio จำกัด<br>
+          Game Publishing & Marketing<br>
+          คุณสินิทธ์ อาจหาญวงศ์ Co-Founder และ CEO บริษัท SHIN-A SERVICE จำกัด<br>
+          สถานที่ : A1-402<br>
+          เฉพาะ 31 สิงหาคม เวลา 10.00 - 12.00 น.<br>
+          รอบละ 120 นาที จำนวนคนต่อรอบ 80 คน</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ
+        </small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">เทคนิคการพัฒนาระบบและเป็นผู้ปกป้องหมวกขาวในโลกไซเบอร์ White Hacker</h5>
+        <p class="card-text">ใครที่สนใจเรื่องไอที เป็นคนชอบใส่ใจเรื่อง Bug อยากลองเป็นนักเจาะระบบ (ในทางที่ดี)
+          ที่เรียกว่า White Hat Hacker ให้มาลองลงมือปฏิบัติของจริง และฝึกฝนทักษะที่จำเป็นสำหรับชาว White Hat Hero
+          โดยเฉพาะเรื่องการรักษาความปลอดภัยทางไซเบอร์<br>
+          สถานที่ A1-401<br>
+          วันละ 2 รอบ รอบละ 90 นาที<br>
+          เวลา: 10.00 - 11.30, 12.30 - 14.00<br>
+          จำนวนคนต่อรอบ 15 คน</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์
+          มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">นิทรรศการผลงานนักศึกษาทุกสาขาคณะวิศวกรรมศาสตร์</h5>
+        <p class="card-text">นิทรรศการผลงานนักศึกษาทุกสาขาคณะวิศวกรรมศาสตร์<br>
+          สถานที่ ฺB4-102</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะวิศวกรรมศาสตร์</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">A successful story of professional in IT Industry (CS)</h5>
+        <p class="card-text">พบกับผู้เชี่ยวชาญและบริษัทชั้นนำตัวจริงที่มาจากภาคอุตสาหกรรม Cyber Security
+          มาให้ข้อมูลพาเจาะเข้าโลกของตำรวจไซเบอร์ จุดประกายแรงบันดาลใจในเส้นทางสายอาชีพด้านเทคโนโลยีให้กับน้อง ๆ
+          ที่สนใจวงการนี้<br>
+          สถานที่ A1-407<br>
+          เวลา 09.00 - 10.00 น.<br>
+          รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">Industry Challenge Showcase: From Player to Pro-Creator</h5>
+        <p class="card-text">มาค้นหา Passion ในแบบที่ใช่
+          การจัดแสดงผลงานของศิษย์เก่าและรุ่นพี่นักศึกษาหลักสูตรเกมและสื่อเชิงโต้ตอบ Game Dev. สุดจี๊ด
+          ที่ได้รับโจทย์จริงจากภาคอุตสาหกรรม และผลงานที่อยู่ในโครงการ BU Game On!<br>
+          สถานที่ : A1-101<br>
+          09.00-16.00 น.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">เทคนิคการพัฒนาเว็บไซต์เต็มรูปแบบ (Frond End และ Back End)</h5>
+        <p class="card-text">ชวนน้อง ๆ ที่สนใจเรื่องการเขียนโปรแกรม รักในความซับซ้อนของการเขียนโค้ด
+          มาเข้าร่วมงานลงมือปฏิบัติจริงทั้งเรื่อง Front-end และ Back-end ได้สัมผัสโปรแกรมอย่างลงลึก
+          เห็นเทคนิคชั้นสูงต่าง ๆ จากผู้เชี่ยวชาญตัวจริง<br>
+          สถานที่ A1-407<br>
+          2 รอบต่อวัน เวลา 10.00 - 11.00 น., 13.00 - 14.00 น.<br>
+          รอบละ 60 นาที จำนวนผู้เข้าร่วมต่อรอบ 40 คน</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">Interactive Media</h5>
+        <p class="card-text">Interactive Media<br>
+          โถงกลางคณะวิศวกรรมศาสตร์ </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะวิศวกรรมศาสตร์</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">เทคนิคการวิเคราะห์และการนำเสนอข้อมูล (Data Science and Data Visualization)</h5>
+        <p class="card-text">ใครเป็นสายวิเคราะห์ข้อมูล ชอบแหวกว่ายในโลกของ Big Data แล้วยังสนใจเรื่องของโปรแกรมเมอร์
+          ห้ามพลาดกับ Workshop ของสาขาวิทยาการคอมพิวเตอร์นี้ น้อง ๆ ที่เข้าร่วมจะได้รับประสบการณ์ปฏิบัติงานจริง
+          และได้เรียนรู้ทักษะอาชีพด้าน Data Science<br>
+          สถานที่ A1-407<br>
+          จำนวน 2 รอบต่อวัน เวลา 11.00 - 12.00 น., 14.00 - 15.00 น.<br>
+          รอบละ 60 นาที จำนวนผู้เข้าร่วม 40 คน</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์
+          มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">A successful story of professional in IT Industry (IT)</h5>
+        <p class="card-text">น้องคนไหนที่ชอบเทคโนโลยี แต่ยังสงสัยถึง identity ว่าอะไรคือสารสนเทศนะ?
+          ชวนมาหาคำตอบกับผู้เชี่ยวชาญตัวจริงเสียงจริงเรื่อง Information Technology กับบริษัทชั้นนำมาจากภาคอุตสาหกรรม
+          ช่วยจุดประกายแรงบันดาลใจในเส้นทางสายอาชีพด้านเทคโนโลยี พาน้อง ๆ ต่อยอดความชอบได้อย่างตรงจุด<br>
+          สถานที่ A1-406<br>
+          เวลา 09.00 - 10.00 น.<br>
+          รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">การใช้ปัญญาประดิษฐ์วิเคราะห์ธุรกิจ (Business Analyst)</h5>
+        <p class="card-text">ถ้าน้อง ๆ เป็นคนที่ชอบทั้งเรื่องเทคโนโลยี และสนใจเรื่องการต่อยอดในธุรกิจ
+          ทุกคนที่เข้าร่วมจะได้เรียนรู้เกี่ยวกับบทบาทและหน้าที่ของ Business Analyst เช่น การวิเคราะห์ข้อมูล การระบุปัญหา
+          และโอกาสในการปรับปรุงธุรกิจ ฝึกสกิลการจัดทำรายงานธุรกิจจากข้อมูลอันหลากหลาย อัปความรู้ได้ทั้งเรื่องธุรกิจและ
+          data<br>
+          สถานที่ A1-406<br>
+          2 รอบต่อวัน เวลา 10.00 - 11.00 น., 13.00 - 14.00 น.<br>
+          รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ</small>
+      </div>
+    </div>
+    <div class="card">
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <div class="card-body">
+        <h5 class="card-title">การพัฒนาแอปพลิเคชัน ด้วย Low-Code Application Platform</h5>
+        <p class="card-text">อยากสร้างแอปเป็นของตัวเองให้หันมาทางนี้ ชวนน้อง ๆ
+          มาเข้าร่วมกิจกรรมที่จะได้รับประสบการณ์ของจริงในการพัฒนาแอปพลิเคชันอย่างง่าย และรวดเร็ว ด้วย Oracle APEX<br>
+          สถานที่ A1-406<br>
+          จำนวน 2 รอบต่อวัน เวลา 11.00 - 12.00 น.,14.00 - 15.00 น.<br>
+          รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ</small>
+      </div>
+    </div>
+  </div>
+  <footer class="under">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-4 text-left py-3" style="font-size: 18px; color: white">
+        <p>
+          9, 1 Phahonyothin Rd, Khlong Nueng,<br />
+          Khlong Luang, Pathum Thani 12120
+        </p>
+      </div>
+      <div
+        class="col-4 d-flex flex-column justify-content-end align-items-end"
+        style="font-size: 24px"
+      >
+        <a
+          href="https://www.facebook.com/buconnectonline"
+          class="mb-2 link-style"
+          style="color: white"
+        >
+          <i class="fa-brands fa-facebook"></i>
+          <span style="display: none">Facebook</span>Facebook
+        </a>
+        <a
+          href="https://www.instagram.com/buconnectonline/?hl=th"
+          class="link-style"
+          style="color: white"
+        >
+          <i class="fa-brands fa-instagram"></i>
+          <span style="display: none">Instagram</span>Instagram
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const username = localStorage.getItem('username');
+      if (username) {
+        const signUpButton = document.getElementById('signUpButton');
+        signUpButton.textContent = username;
+        signUpButton.href = '#';
+      }
 
-          const signInButton = document.getElementById('signInButton');
-          signInButton.addEventListener('click', function() {
-              window.location.href = 'index.html';
-          });
+      const signInButton = document.getElementById('signInButton');
+      signInButton.addEventListener('click', function () {
+        window.location.href = 'index.html';
       });
-</script>
+    });
+    
+
+  </script>
+
 </body>
 
 </html>
