@@ -25,6 +25,19 @@
       body {
         background-color: rgb(253, 241, 227);
       }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .btn-bounce:hover {
+        animation: bounce 0.5s infinite;
+      }
     </style>
   </head>
   <body>
@@ -203,7 +216,7 @@
             และมีต่อกับกิจกรรมสุดพิเศษช่วงเย็นสําหรับคอนเสิร์ตและโชว์วงดนตรีที่ตึก
             <code>C2</code> อย่าพลาดกิจกรรมดีๆที่รอคอยอยู่นะครับ
           </p>
-          <a href="workshop.html" class="btn btn-primary">ดูรายละเอียด</a>
+          <a href="workshop.html" class="btn btn-primary btn-bounce">ดูรายละเอียด</a>
         </div>
         <div class="col-md-5">
           <a href="workshop.html">
@@ -232,7 +245,7 @@
             <code>BU Open House</code> ดูรูปภาพสุดเท่ของเหล่าพี่ๆชาว BU
             และภาพน้องๆสุดน่ารักกันได้ที่นี่เลย
           </p>
-          <a href="Gallery.html" class="btn btn-primary">ดูภาพเพิ่มเติม</a>
+          <a href="Gallery.html" class="btn btn-primary btn-bounce">ดูภาพเพิ่มเติม</a>
         </div>
         <div class="col-md-5 order-md-1">
           <a href="Gallery.html">
@@ -261,13 +274,13 @@
           <p class="lead">
             รวมคำถามที่พบบ่อยจากน้องๆ และคำตอบจากเรา ไขทุกข้อข้องใจของน้องๆ
           </p>
-          <a href="faq.html" class="btn btn-primary">ดูคำถาม</a>
+          <a href="faq.html" class="btn btn-primary btn-bounce">ดูคำถาม</a>
         </div>
         <div class="col-md-5">
           <a href="faq.html">
             <img
               id="carouselImage3"
-              src="img/bu openhouse\T02.jpg"
+              src="img/bu openhouse\T11.jpg"
               class="featurette-image img-fluid mx-auto zoom-on-hover"
               alt="BU Open House Image"
               width="500"
@@ -314,7 +327,7 @@
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <a
                 href="contactUs.html"
-                class="btn btn-light btn-lg px-4 me-md-2"
+                class="btn btn-light btn-lg px-4 me-md-2 btn-bounce"
               >
                 Click
               </a>
@@ -385,7 +398,6 @@
           "img/bu openhouse\\T25.jpg",
         ],
         [
-          "img/bu openhouse\\T02.jpg",
           "img/bu openhouse\\T10.jpg",
           "img/bu openhouse\\T11.jpg",
         ],
