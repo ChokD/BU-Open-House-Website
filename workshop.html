@@ -13,61 +13,55 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <style>
+    .typewriter {
+      display: flex;
+      justify-content: center;
 
+    }
+
+    .typewriter h1 {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 1px solid;
+      animation: typing 7s steps(22) forwards,
+        blink 1s step-end infinite;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      transition: transform .5s ease-in-out;
+    }
+
+    .card:hover img {
+      transform: scale(1.5) rotate(25deg);
+    }
+  </style>
 </head>
-<style>
-  .typewriter {
-    display: flex;
-    justify-content: center;
-
-  }
-
-  .typewriter h1 {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 1px solid;
-    animation: typing 7s steps(22) forwards,
-      blink 1s step-end infinite;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 100%;
-    }
-  }
-
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-  
-  .card img {
-    width: 100px;
-    height: 100px;
-    transition: transform .5s ease-in-out;
-  }
-
-  .card:hover img {
-    transform: scale(1.5) rotate(25deg);
-  }
-</style>
 
 <body>
   <header>
     <div class="row flex-nowrap justify-content-between align-items-center">
       <div class="col-4 text-left d-flex justify-content-start">
-        <a href="index.html"
-          ><img
-            src="img\BULogo1.png"
-            style="object-position: center"
-            height="30"
-        /></a>
+        <a href="index.html"><img src="img\BULogo1.png" style="object-position: center" height="30" /></a>
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center">
         <a id="signUpButton" class="btn btn-sm btn-outline-secondary text-white" href="Sign-up.html">-</a>
@@ -76,66 +70,38 @@
     </div>
   </header>
 
-  <div
-    class="flex justify-between items-center px-8 mx-3 bg-blue-400 w-full h-[80px] rounded-2xl"
-  >
+  <div class="flex justify-between items-center px-8 mx-3 bg-blue-400 w-full h-[80px] rounded-2xl">
     <div class="md:flex gap-8 hidden">
       <nav class="nav nav-underline justify-content-between">
-        <a class="nav-item nav-link link-body-emphasis" href="index.html"
-          >Home</a
-        >
-        <a class="nav-item nav-link link-body-emphasis" href="about.html"
-          >About</a
-        >
-        <a
-          class="nav-item nav-link link-body-emphasis"
-          href="schedule.html"
-          >Schedule</a
-        >
-        <a class="nav-item nav-link link-body-emphasis" href="speaker.html"
-          >Speaker</a
-        >
-        <a class="nav-item nav-link link-body-emphasis active" href="workshop.html"
-          >Workshops</a
-        >
-        <a class="nav-item nav-link link-body-emphasis" href="Gallery.html"
-          >Gallery</a
-        >
-        <a class="nav-item nav-link link-body-emphasis" href="faq.html"
-          >FAQ</a
-        >
-        <a
-          class="nav-item nav-link link-body-emphasis"
-          href="registration.html"
-          >Registration</a
-        >
-        <a class="nav-item nav-link link-body-emphasis" href="contactUs.html"
-          >Contact</a
-        >
-        <a class="nav-item nav-link link-body-emphasis" href="map.html"
-          >Map</a
-        >
-        <a class="nav-item nav-link link-body-emphasis" href="sponsors.html"
-          >Sponsors</a
-        >
+        <a class="nav-item nav-link link-body-emphasis" href="index.html">Home</a>
+        <a class="nav-item nav-link link-body-emphasis" href="about.html">About</a>
+        <a class="nav-item nav-link link-body-emphasis" href="schedule.html">Schedule</a>
+        <a class="nav-item nav-link link-body-emphasis" href="speaker.html">Speaker</a>
+        <a class="nav-item nav-link link-body-emphasis active" href="workshop.html">Workshops</a>
+        <a class="nav-item nav-link link-body-emphasis" href="Gallery.html">Gallery</a>
+        <a class="nav-item nav-link link-body-emphasis" href="faq.html">FAQ</a>
+        <a class="nav-item nav-link link-body-emphasis" href="registration.html">Registration</a>
+        <a class="nav-item nav-link link-body-emphasis" href="contactUs.html">Contact</a>
+        <a class="nav-item nav-link link-body-emphasis" href="map.html">Map</a>
+        <a class="nav-item nav-link link-body-emphasis" href="sponsors.html">Sponsors</a>
       </nav>
     </div>
   </div>
-  <!-- เนื้อหา -->
+
   <div class="px-4 py-5 my-1 text-center typewriter">
     <div>
       <h1 class="display-5 fw-bold">Workshops & Activities</h1>
     </div>
   </div>
-  <!-- เพิ่ม -->
+
   <div class="px-4 py-5 my-5 bg-success text-center">
     <img class="d-block mx-auto mb-4" src="img\workshops\green.svg" width="200" height="100">
     <h1 class="display-5 text-light fw-bold">มาลองเล่นกิจกรรม<br>INNOVATIVE CLUSTER</h1>
   </div>
-  <!-- เพิ่ม -->
+
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">การพัฒนาเกมด้วย Unreal Engine</h5>
         <p class="card-text">ชวนน้องเกมเมอร์ตัวจริง ที่อยากไปได้ไกลกว่าแค่เป็นผู้เล่น แต่อยากเป็นผู้สร้าง
@@ -153,7 +119,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">การเขียนโปรแกรมปัญญาประดิษฐ์เพื่อตรวจจับวัตถุ</h5>
         <p class="card-text">ไหนใครชอบโบกมือตามจอตรวจจับอุณหภูมิตามห้าง?
@@ -169,7 +135,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">การพัฒนาเกมบนโลกเสมือนจริง Virtual Reality</h5>
         <p class="card-text">ใครที่สนใจเกม VR เป็นพิเศษ ชอบที่ได้ออกท่าทางการเล่มเกมของจริง ชวนน้อง ๆ
@@ -186,7 +152,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">การสร้างตัวละครด้วย Generative AI</h5>
         <p class="card-text">ใครอยากที่อยากสร้างตัวละครเกม ตัวการ์ตูนเป็นของตัวเองโดยเฉพาะ แต่ฝีมือทางศิลปะอาจจะไปไม่ถึง
@@ -202,7 +168,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">Student Showcase : From Task to Pro-Developer</h5>
         <p class="card-text">น้องๆ ที่สนใจอยากเป็นโปรแกรมเมอร์ขั้นเทพ มาชมการจัดแสดงผลงานสาขาวิชาเทคโนโลยีสารสนเทศ
@@ -216,7 +182,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">การสร้าง Visual Effect สำหรับเกม ด้วย Unreal Engine</h5>
         <p class="card-text">ใครที่ติดใจกับ Special Effects ภายในเกม ไม่ว่าจะเบิด รถถัง ขี่กระบี่ ฟันดาบ
@@ -233,7 +199,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">เสริมศักยภาพความคิดสร้างสรรค์ด้วยหุ่นยนต์แขนกล Enhancing Creative Potential with Robotic
           Arms</h5>
@@ -250,7 +216,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">Session Talk and Show Drone</h5>
         <p class="card-text">29 สิงหาคม 2567<br>
@@ -278,7 +244,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">เส้นทางสู่อาชีพ พบกับปรมาจารย์วงการเกม</h5>
         <p class="card-text">
@@ -302,7 +268,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">เทคนิคการพัฒนาระบบและเป็นผู้ปกป้องหมวกขาวในโลกไซเบอร์ White Hacker</h5>
         <p class="card-text">ใครที่สนใจเรื่องไอที เป็นคนชอบใส่ใจเรื่อง Bug อยากลองเป็นนักเจาะระบบ (ในทางที่ดี)
@@ -319,7 +285,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">นิทรรศการผลงานนักศึกษาทุกสาขาคณะวิศวกรรมศาสตร์</h5>
         <p class="card-text">นิทรรศการผลงานนักศึกษาทุกสาขาคณะวิศวกรรมศาสตร์<br>
@@ -330,7 +296,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">A successful story of professional in IT Industry (CS)</h5>
         <p class="card-text">พบกับผู้เชี่ยวชาญและบริษัทชั้นนำตัวจริงที่มาจากภาคอุตสาหกรรม Cyber Security
@@ -345,7 +311,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">Industry Challenge Showcase: From Player to Pro-Creator</h5>
         <p class="card-text">มาค้นหา Passion ในแบบที่ใช่
@@ -359,7 +325,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">เทคนิคการพัฒนาเว็บไซต์เต็มรูปแบบ (Frond End และ Back End)</h5>
         <p class="card-text">ชวนน้อง ๆ ที่สนใจเรื่องการเขียนโปรแกรม รักในความซับซ้อนของการเขียนโค้ด
@@ -374,7 +340,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">Interactive Media</h5>
         <p class="card-text">Interactive Media<br>
@@ -385,7 +351,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">เทคนิคการวิเคราะห์และการนำเสนอข้อมูล (Data Science and Data Visualization)</h5>
         <p class="card-text">ใครเป็นสายวิเคราะห์ข้อมูล ชอบแหวกว่ายในโลกของ Big Data แล้วยังสนใจเรื่องของโปรแกรมเมอร์
@@ -401,7 +367,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">A successful story of professional in IT Industry (IT)</h5>
         <p class="card-text">น้องคนไหนที่ชอบเทคโนโลยี แต่ยังสงสัยถึง identity ว่าอะไรคือสารสนเทศนะ?
@@ -416,7 +382,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">การใช้ปัญญาประดิษฐ์วิเคราะห์ธุรกิจ (Business Analyst)</h5>
         <p class="card-text">ถ้าน้อง ๆ เป็นคนที่ชอบทั้งเรื่องเทคโนโลยี และสนใจเรื่องการต่อยอดในธุรกิจ
@@ -432,7 +398,7 @@
       </div>
     </div>
     <div class="card">
-      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top" ></a>
+      <a href="Sign-up.html"><img src="img\workshops\green.svg" class="card-img-top"></a>
       <div class="card-body">
         <h5 class="card-title">การพัฒนาแอปพลิเคชัน ด้วย Low-Code Application Platform</h5>
         <p class="card-text">อยากสร้างแอปเป็นของตัวเองให้หันมาทางนี้ ชวนน้อง ๆ
@@ -454,23 +420,12 @@
           Khlong Luang, Pathum Thani 12120
         </p>
       </div>
-      <div
-        class="col-4 d-flex flex-column justify-content-end align-items-end"
-        style="font-size: 24px"
-      >
-        <a
-          href="https://www.facebook.com/buconnectonline"
-          class="mb-2 link-style"
-          style="color: white"
-        >
+      <div class="col-4 d-flex flex-column justify-content-end align-items-end" style="font-size: 24px">
+        <a href="https://www.facebook.com/buconnectonline" class="mb-2 link-style" style="color: white">
           <i class="fa-brands fa-facebook"></i>
           <span style="display: none">Facebook</span>Facebook
         </a>
-        <a
-          href="https://www.instagram.com/buconnectonline/?hl=th"
-          class="link-style"
-          style="color: white"
-        >
+        <a href="https://www.instagram.com/buconnectonline/?hl=th" class="link-style" style="color: white">
           <i class="fa-brands fa-instagram"></i>
           <span style="display: none">Instagram</span>Instagram
         </a>
@@ -491,7 +446,7 @@
         window.location.href = 'index.html';
       });
     });
-    
+
 
   </script>
 

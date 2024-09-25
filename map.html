@@ -13,38 +13,34 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <style>
+        section {
+            background: url(https://images.unsplash.com/photo-1460411794035-42aac080490a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+
+        .tumpnail img {
+            margin: 0 0;
+            width: 100%;
+            height: 225px;
+            cursor: pointer;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+
+        }
+
+        .tumpnail img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
-<style>
-    section {
-        background: url(https://images.unsplash.com/photo-1460411794035-42aac080490a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    }
 
-    .tumpnail img {
-        margin: 0 0;
-        width: 100%;
-        height: 225px;
-        cursor: pointer;
-        transition-property: all;
-        transition-duration: 0.3s;
-        transition-timing-function: ease;
-        
-    }
-    .tumpnail img:hover {
-        transform: scale(1.05);
-    }
-
-</style>
 
 <body>
     <header>
         <div class="row flex-nowrap justify-content-between align-items-center">
             <div class="col-4 text-left d-flex justify-content-start">
-              <a href="index.html"
-              ><img
-                src="img\BULogo1.png"
-                style="object-position: center"
-                height="30"
-            /></a>
+                <a href="index.html"><img src="img\BULogo1.png" style="object-position: center" height="30" /></a>
             </div>
             <div class="col-4 d-flex justify-content-end align-items-center">
                 <a id="signUpButton" class="btn btn-sm btn-outline-secondary text-white" href="Sign-up.html">-</a>
@@ -52,7 +48,6 @@
             </div>
         </div>
     </header>
-    <!-- ส่วนหัว -->
     <div class="flex justify-between items-center px-8 mx-3 bg-blue-400 w-full h-[80px] rounded-2xl">
         <div class="md:flex gap-8 hidden">
             <nav class="nav nav-underline justify-content-between">
@@ -70,7 +65,6 @@
             </nav>
         </div>
     </div>
-    <!-- เนื้อหา -->
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
@@ -79,7 +73,7 @@
             </div>
         </div>
     </section>
-    <!-- เนื้อหา 2 -->
+
     <div class="album py-5 bg-light">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -593,7 +587,6 @@
             </div>
         </div>
     </div>
-    <!-- ส่วนท้าย -->
     <footer class="under">
         <div class="row justify-content-between align-items-center">
             <div class="col-4 text-left py-3" style="font-size: 18px; color: white">
@@ -615,19 +608,20 @@
         </div>
     </footer>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          const username = localStorage.getItem('username');
-          if (username) {
-              const signUpButton = document.getElementById('signUpButton');
-              signUpButton.textContent = username;
-              signUpButton.href = '#';
-          }
+        document.addEventListener('DOMContentLoaded', function () {
+            const username = localStorage.getItem('username');
+            if (username) {
+                const signUpButton = document.getElementById('signUpButton');
+                signUpButton.textContent = username;
+                signUpButton.href = '#';
+            }
 
-          const signInButton = document.getElementById('signInButton');
-          signInButton.addEventListener('click', function() {
-              window.location.href = 'index.html';
-          });
-      });
+            const signInButton = document.getElementById('signInButton');
+            signInButton.addEventListener('click', function () {
+                window.location.href = 'index.html';
+            });
+        });
     </script>
 </body>
+
 </html>
